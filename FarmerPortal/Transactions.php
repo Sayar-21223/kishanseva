@@ -1,25 +1,30 @@
-<?php
-include("../Includes/db.php");
-include("../Functions/functions.php");
-$sessphonenumber = $_SESSION['phonenumber'];
-?>
+<!-- <?php
+     include("../Functions/functions.php");
+     ?> -->
 
 <!DOCTYPE html>
-<html lang="en">
+
+<html style="overflow-x: hidden;">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     <title>Farmer - Transaction</title>
+     <!-- <link rel="stylesheet" href="portal_files/font-awesome.min.css"> -->
+     <!-- <script src="../portal_files/c587fc1763.js.download" crossorigin="anonymous"></script> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    <title>Farmer - Insert Product</title>
-    <style>
-                            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+     <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
+     <script src="../portal_files/jquery.min.js.download"></script>
+     <script src="../portal_files/popper.min.js.download"></script>
+     <script src="../portal_files/bootstrap.min.js.download"></script>
+
+     <style>
+                     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 :root {
      --green: #282525;
@@ -35,7 +40,7 @@ $sessphonenumber = $_SESSION['phonenumber'];
      margin: 0;
      box-sizing: border-box;
      font-family: "Poppins", sans-serif;
-     font-size: 17px;
+     font-size: 20px;
 }
           * {
                margin: 0;
@@ -224,6 +229,19 @@ $sessphonenumber = $_SESSION['phonenumber'];
                float: left;
           }
 
+          h3 {
+               width: 100%;
+               text-align: center;
+               border-bottom: 1px solid #000;
+               line-height: 0.1em;
+               margin: 10px 0 20px;
+          }
+
+          h3 span {
+               background: #fff;
+               padding: 0 10px;
+          }
+
           .morefooter {
                height: 100px;
                width: 100%;
@@ -245,11 +263,33 @@ $sessphonenumber = $_SESSION['phonenumber'];
 
           }
 
+          .instagram {
+               margin-top: 10px;
+               float: left;
+               margin-left: 420px;
+          }
+
+          .instaid {
+               height: 10px;
+               width: 100%;
+
+          }
 
           .text {
                float: left;
                margin-left: 735px;
                margin-top: -50px;
+          }
+
+          .gmailid {
+               float: right;
+               margin-right: 80px;
+               margin-top: -60px;
+          }
+
+          .copy {
+               float: left;
+               margin-top: -65px;
           }
 
           body {
@@ -268,6 +308,13 @@ $sessphonenumber = $_SESSION['phonenumber'];
           .add_button {
                float: right;
                text-align: center;
+          }
+
+
+          h1 {
+               font-family: 'Times New Roman', Times, serif;
+               color: white;
+
           }
 
           .lost {
@@ -293,6 +340,12 @@ $sessphonenumber = $_SESSION['phonenumber'];
                float: right;
           }
 
+          h2 {
+               color: white;
+               margin-top: 3em;
+               text-align: center;
+
+          }
 
           .hii {
                float: right;
@@ -339,6 +392,12 @@ $sessphonenumber = $_SESSION['phonenumber'];
           }
 
 
+          h1 {
+               font-family: 'Times New Roman', Times, serif;
+               color: white;
+
+          }
+
           .lost {
                font-family: Verdana, Geneva, Tahoma, sans-serif;
                color: black;
@@ -355,6 +414,13 @@ $sessphonenumber = $_SESSION['phonenumber'];
           .button {
                position: relative;
                float: right;
+          }
+
+          h2 {
+               color: white;
+               margin-top: 3em;
+               text-align: center;
+
           }
 
           .hii {
@@ -439,23 +505,23 @@ $sessphonenumber = $_SESSION['phonenumber'];
 
           #navbar {
 
-               padding: 20px;
-               color: green;
-               text-decoration: none;
-               margin: 20px;
-               font-size: 25px;
-               padding-top: 10px;
-          }
+padding: 20px;
+color: black;
+text-decoration: none;
+margin: 20px;
+font-size: 25px;
+padding-top: 10px;
+}
 
-          #navbar:hover {
-               padding: 20px;
-               color: green;
-               text-decoration: underline;
-               margin: 15px;
-               font-size: 25px;
-               font-weight: bolder;
-               padding-top: 10px;
-          }
+/* #navbar:hover {
+padding: 20px;
+color: orangered;
+text-decoration: underline;
+margin: 20px;
+font-size: 30px;
+font-weight: bolder;
+padding-top: 10px;
+} */
 
           #navbar i {
                padding-right: 1%;
@@ -525,7 +591,69 @@ $sessphonenumber = $_SESSION['phonenumber'];
                margin-right: 150px;
           }
 
+          .pictus {
+               margin-top: 200px;
+               /* background-color: red; */
+          }
 
+          .pictus>img {
+               height: 100px;
+
+               width: 150px;
+          }
+
+          .imag1 {
+               margin-top: 20px;
+               margin-left: 180px;
+          }
+
+          .imag2 {
+               margin-top: 20px;
+
+               margin-left: 340px;
+
+          }
+
+          .imag3 {
+               margin-top: 20px;
+
+               margin-left: 350px;
+
+          }
+
+          .imag1_under {
+               max-width: 250px;
+               width: 100%;
+               min-height: 100px;
+               margin-left: 100px;
+               text-align: center;
+               font-size: 20px;
+
+          }
+
+          .imag2_under {
+               max-width: 250px;
+               width: 100%;
+               min-height: 100px;
+               margin-left: 290px;
+               margin-top: 20px;
+               text-align: center;
+               font-size: 20px;
+          }
+
+          .imag3_under {
+               max-width: 250px;
+               width: 100%;
+               font-size: 20px;
+
+               min-height: 100px;
+               margin-left: 290px;
+               text-align: center;
+          }
+
+          .image {
+               max-width: 200px;
+          }
 
           .aligncenter {
                text-align: center;
@@ -662,10 +790,76 @@ $sessphonenumber = $_SESSION['phonenumber'];
                margin-left: 35%;
           }
 
-          .blackgoldie {
-               background-color: #292b2c;
+          .tab {
+               width: 100%;
+
+               border-style: solid;
+               border-width: 2px;
+               padding: 2px;
 
           }
+
+          /* th {
+               border-color: white;
+               border-style: solid;
+               border-width: 2px;
+               padding: 2px;
+
+          }
+
+          .tableyhead {
+
+               color: red;
+
+          }
+
+          .thy {
+               background-color: #555;
+               color: white;
+
+          }
+
+          .trow {
+               align-content: center;
+          } */
+
+          body {
+               margin: 0;
+               padding: 0px;
+               font-family: sans-serif;
+          }
+
+          * {
+               box-sizing: border-box;
+          }
+
+          .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table td,
+    .table th {
+        padding: 8px 8px;
+        border: 0.5px solid black;
+        text-align: center;
+        font-size: 16px;
+        background-color: white;
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid black;
+    }
+
+    .table th {
+        background-color: black;
+        color: goldenrod;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
 
           /* For medium devices (e.g. tablets) */
           /* @media (min-width: 420px) {
@@ -706,6 +900,39 @@ $sessphonenumber = $_SESSION['phonenumber'];
                     background-color: #ff5500;
                }
 
+               .table thead {
+                    display: none;
+               }
+
+               .table,
+               .table tbody,
+               .table tr,
+               .table td {
+                    display: block;
+                    width: 100%;
+               }
+
+               .table tr {
+                    margin-bottom: 15px;
+               }
+
+               .table td {
+                    text-align: right;
+                    padding-left: 50%;
+                    text-align: right;
+                    position: relative;
+               }
+
+               .table td::before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 0;
+                    width: 50%;
+                    padding-left: 15px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-align: left;
+               }
 
                .left {
                     display: flex;
@@ -719,12 +946,6 @@ $sessphonenumber = $_SESSION['phonenumber'];
                     text-align: center;
                     margin-right: 35%;
                     padding: 15px;
-               }
-
-               .desc {
-                    margin-top: 15px;
-                    height: 100px;
-
                }
 
                .searchbox {
@@ -741,11 +962,11 @@ $sessphonenumber = $_SESSION['phonenumber'];
 
 
           }
-    </style>
-</head>
+     </style>
 
-<body style="background-color: #ffff84;">
-<nav class="navbar navbar-expand-xl ">
+</head>
+     <body style="background-color: #ffff84;">
+     <nav class="navbar navbar-expand-xl ">
         <!-- <a href="#" class="navbar-brand">Academind</a> -->
         <div class=" flex-row-reverse left ">
 
@@ -814,150 +1035,93 @@ $sessphonenumber = $_SESSION['phonenumber'];
             </div>
         </div>
     </nav>
-    <div class="container">
-        <main class="my-form">
-            <div class="cotainer">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="card">
-                            <?php
-                            if (isset($_SESSION['phonenumber'])) {
-                                if (isset($_GET['id'])) {
-                                    $id = $_GET['id'];
-                                    $getting_prod = "select * from products where product_id = $id";
-                                    $run = mysqli_query($con, $getting_prod);
-
-                                    while ($details = mysqli_fetch_array($run)) {
-                                        $product_title = $details['product_title'];
-                                        $product_cat = $details['product_cat'];
-                                        $product_type = $details['product_type'];
-                                        $product_stock = $details['product_stock'];
-                                        $product_price = $details['product_price'];
-                                        $product_expiry = $details['product_expiry'];
-                                        $product_desc = $details['product_desc'];
-                                        $product_keywords = $details['product_keywords'];
-                                        $product_delivery = $details['product_delivery'];
-                                    }
-                                }
-                            }
+          <br>
+          
 
 
+          <br>
 
-                         
+          <div style="display:block;">
+
+               <div class=content_item><label style="font-size:30px; text-shadow: 1px 1px 1px gray;"><b>TRANSACTION HISTORY</b></label></div>
+               <br>
+          </div>
 
 
-                            ?>
+          <div class="container">
 
-                            <div class="card-header" style="background-color:black;color:#f5b94a;margin">
-                                <h4 class="text-center font-weight-bold" >Insert Your New Product</h4>
-                            </div>
-                            <div class="card-body">
+               <table class="table">
+                    <thead>
+                         <th>Product Name</th>
+                         <th>Name</th>
+                         <th>Phone Number</th>
+                         <th>Delivery Address</th>
+                         <th>Quantity</th>
+                         <th>Amount</th>
+                    </thead>
 
-                                <form name="my-form" action="InsertProduct.php" method="post" enctype="multipart/form-data" ;">
 
-                                    <div class="form-group row">
-                                        <label for="full_name" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Title:</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="full_name" class="form-control" name="product_title" placeholder="<?php echo $product_title; ?>" required>
-                                        </div>
-                                    </div>
+                    <tbody>
+                         <?php
 
-                                    <div class="form-group row">
-                                        <label for="email_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Stock:(In kg)</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="full_name" class="form-control" name="product_stock" placeholder="<?php echo $product_title; ?>" required>
-                                        </div>
-                                    </div>
+                         global $con;
+                         if (isset($_SESSION['phonenumber'])) {
+                              $sess_phone_number = $_SESSION['phonenumber'];
+                              $sel_price = "select * from orders where phonenumber = '$sess_phone_number'";
+                              $run_price = mysqli_query($con, $sel_price);
+                              $i = 0;
 
-                                    <div class="form-group row">
-                                        <label for="user_name" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Categories:</label>
-                                        <div class="col-md-6">
-                                            <select name="product_cat" required>
-                                                <option>Select a Category</option>
-                                                <?php
-                                                $get_cats = "select * from categories";
-                                                $run_cats =  mysqli_query($con, $get_cats);
-                                                while ($row_cats = mysqli_fetch_array($run_cats)) {
-                                                    $cat_id = $row_cats['cat_id'];
-                                                    $cat_title = $row_cats['cat_title'];
-                                                    echo "<option value='$cat_id'>$cat_title</option>";
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
-                                    </div>
+                              while ($p_price = mysqli_fetch_array($run_price)) {
+                                   $product_id = $p_price['product_id'];
+                                   $qty = $p_price['qty'];
+                                   $total = $p_price['total'];
+                                   $address = $p_price['address'];
+                                   $phone = $p_price['buyer_phonenumber'];
 
-                                    <div class="form-group row">
-                                        <label for="phone_number" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product type :</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="phone_number" class="form-control" name="product_type" placeholder="Example . potato" required>
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <label for="present_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Expiry :</label>
-                                        <div class="col-md-6">
-                                            <input id="present_address" class="form-control" type="date" name="product_expiry" required>
-                                        </div>
-                                    </div>
+                                   $pro_price = "select * from products where product_id='$product_id'";
+                                   $run_pro_price = mysqli_query($con, $pro_price);
+                                   while ($pp_price = mysqli_fetch_array($run_pro_price)) {
+                                        $product_title = $pp_price['product_title'];
 
-                                    <div class="form-group row">
-                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Image :</label>
-                                        <div class="col-md-6">
-                                            <input id="permanent_address" type="file" name="product_image">
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <label for="nid_number" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product MRP : (Per kg)</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="nid_number" class="form-control" name="product_price" placeholder="Enter Product price" required>
-                                        </div>
-                                    </div>
+                                        $query_name = "select * from buyerregistration where buyer_phone = $phone";
+                                        $run_query_name = mysqli_query($con, $query_name);
+                                        while ($names = mysqli_fetch_array($run_query_name)) {
+                                             $buyer_name = $names['buyer_name'];
 
-                                    <!-- <div class="form-group row">
-                                        <label for="nid_number1" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Base Price:(Per kg)</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="nid_number1" class="form-control" name="product_baseprice" placeholder="Enter Product base price" required>
-                                        </div>
-                                    </div> -->
 
-                                    <div class="form-group row">
-                                        <label for="nid_number2" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder"> Product Description:</label>
-                                        <div class="col-md-6">
-                                            <textarea name="product_desc" id="nid_number2" class="form-control" name="product_desc" rows="3" required></textarea>
-                                        </div>
-                                    </div>
+                         ?>
+                                             <tr>
+                                                  <td data-label="Product Name"><?php echo $product_title; ?></td>
+                                                  <td data-label="Name"><?php echo $buyer_name; ?></td>
+                                                  <td data-label="Phone Number"><?php echo $phone; ?></td>
+                                                  <td data-label="Address"><?php echo $address; ?></td>
+                                                  <td data-label="Quantity"><?php echo $qty; ?></td>
+                                                  <td data-label="Price"><?php echo $total; ?></td>
+                                             </tr>
 
-                                    <div class="form-group row">
-                                        <label for="nid_number3" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Keywords:</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="nid_number3" class="form-control" name="product_keywords" placeholder="Example best potatos" required>
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <label for="nid_number4" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Delivery :</label>
-                                        <div class="col-md-6">
-                                            <input type="radio" id="nid_number4" name="product_delivery" value="yes" />Yes
-                                            <input type="radio" id="nid_number4" name="product_delivery" value="no" />No
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn btn-primary" name="insert_pro" style="color:#f5b94a;background-color:black;">
-                                            INSERT
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </main>
-    </div>
+                    </tbody>
+<?php
+                                        }
+                                   }
+                                   $i++;
+                              }
+                         } else {
+                              echo "<h1 align = center style='color:black;'>Please Login</h1><br><br>";
+                         } ?>
+               </table>
+          </div> <br> <br>
 
-    <body>
+
+
+
+
+
+
+          
+
+     </body>
 
 </html>
