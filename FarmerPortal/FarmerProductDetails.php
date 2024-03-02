@@ -668,80 +668,7 @@ include("../Functions/functions.php");
 
           }
 
-          /* For medium devices (e.g. tablets) */
-          /* @media (min-width: 420px) {
-               img {
-               max-width: 48%;
-               }
-          } */
-          /* For large devices (e.g. desktops) */
-          @media (min-width: 760px) {
-               .resizing {
-                    height: 500px;
-               }
-          }
-
-          @media only screen and (min-device-width:320px) and (max-device-width:480px) {
-               .image {
-                    max-width: 48%;
-               }
-
-               .firstimage {
-                    height: auto;
-                    width: 90%;
-               }
-
-               .card {
-                    width: 80%;
-                    margin-left: 10%;
-                    margin-right: 10%;
-
-               }
-
-               .col {
-                    margin-top: 20px;
-               }
-
-               .right {
-                    display: none;
-                    background-color: #ff5500;
-               }
-
-
-               .left {
-                    display: flex;
-               }
-
-               .moblogo {
-                    display: none;
-               }
-
-               .logins {
-                    text-align: center;
-                    margin-right: 35%;
-                    padding: 15px;
-               }
-
-               .desc {
-                    margin-top: 15px;
-                    height: 100px;
-
-               }
-
-               .searchbox {
-                    width: 95%;
-                    margin-right: 5%;
-                    margin-left: 0%;
-               }
-
-               .moblists {
-                    display: inline-block;
-                    text-align: center;
-                    width: 100%;
-               }
-
-
-          }
+         
      </style>
 </head>
 
@@ -786,7 +713,7 @@ include("../Functions/functions.php");
                         if (isset($_SESSION['phonenumber'])) {
 
                             echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
-                            echo "<a href='Transactions.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
+                            echo "<a href='Orders.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
                             echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
                         } else {
                             echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";

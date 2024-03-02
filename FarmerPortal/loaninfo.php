@@ -1,26 +1,61 @@
 <?php
-include("../Includes/db.php");
 include("../Functions/functions.php");
-$sessphonenumber = $_SESSION['phonenumber'];
+
+// Check if the user is logged in and get their phone number from the session or any other source
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
+<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Loan Information</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-
-    <title>Farmer - Insert Product</title>
+     <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
+     <script src="../portal_files/jquery.min.js.download"></script>
+     <script src="../portal_files/popper.min.js.download"></script>
+     <script src="../portal_files/bootstrap.min.js.download"></script>
     <style>
-                            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .loan-info {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .loan-info p {
+            margin: 0 0 10px;
+        }
+
+        .loan-info p:last-child {
+            margin-bottom: 0;
+        }
+        
 :root {
      --green: #282525;
      --black: #444;
@@ -667,83 +702,8 @@ $sessphonenumber = $_SESSION['phonenumber'];
 
           }
 
-          /* For medium devices (e.g. tablets) */
-          /* @media (min-width: 420px) {
-               img {
-               max-width: 48%;
-               }
-          } */
-          /* For large devices (e.g. desktops) */
-          @media (min-width: 760px) {
-               .resizing {
-                    height: 500px;
-               }
-          }
-
-          @media only screen and (min-device-width:320px) and (max-device-width:480px) {
-               .image {
-                    max-width: 48%;
-               }
-
-               .firstimage {
-                    height: auto;
-                    width: 90%;
-               }
-
-               .card {
-                    width: 80%;
-                    margin-left: 10%;
-                    margin-right: 10%;
-
-               }
-
-               .col {
-                    margin-top: 20px;
-               }
-
-               .right {
-                    display: none;
-                    background-color: #ff5500;
-               }
-
-
-               .left {
-                    display: flex;
-               }
-
-               .moblogo {
-                    display: none;
-               }
-
-               .logins {
-                    text-align: center;
-                    margin-right: 35%;
-                    padding: 15px;
-               }
-
-               .desc {
-                    margin-top: 15px;
-                    height: 100px;
-
-               }
-
-               .searchbox {
-                    width: 95%;
-                    margin-right: 5%;
-                    margin-left: 0%;
-               }
-
-               .moblists {
-                    display: inline-block;
-                    text-align: center;
-                    width: 100%;
-               }
-
-
-          }
     </style>
 </head>
-
 <body style="background-color: #ffff84;">
 <nav class="navbar navbar-expand-xl ">
         <!-- <a href="#" class="navbar-brand">Academind</a> -->
@@ -756,9 +716,7 @@ $sessphonenumber = $_SESSION['phonenumber'];
             </div>  -->
             </div>
             <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
-            <a class="float-left" href="#">
-                    <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
-            </a>
+            
         </div>
         <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
@@ -815,149 +773,21 @@ $sessphonenumber = $_SESSION['phonenumber'];
         </div>
     </nav>
     <div class="container">
-        <main class="my-form">
-            <div class="cotainer">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="card">
-                            <?php
-                            if (isset($_SESSION['phonenumber'])) {
-                                if (isset($_GET['id'])) {
-                                    $id = $_GET['id'];
-                                    $getting_prod = "select * from products where product_id = $id";
-                                    $run = mysqli_query($con, $getting_prod);
-
-                                    while ($details = mysqli_fetch_array($run)) {
-                                        $product_title = $details['product_title'];
-                                        $product_cat = $details['product_cat'];
-                                        $product_type = $details['product_type'];
-                                        $product_stock = $details['product_stock'];
-                                        $product_price = $details['product_price'];
-                                        $product_expiry = $details['product_expiry'];
-                                        $product_desc = $details['product_desc'];
-                                        $product_keywords = $details['product_keywords'];
-                                        $product_delivery = $details['product_delivery'];
-                                    }
-                                }
-                            }
-
-
-
-                         
-
-
-                            ?>
-
-                            <div class="card-header" style="background-color:black;color:#f5b94a;margin">
-                                <h4 class="text-center font-weight-bold" >Insert Your New Product</h4>
-                            </div>
-                            <div class="card-body">
-
-                                <form name="my-form" action="InsertProduct.php" method="post" enctype="multipart/form-data" ;">
-
-                                    <div class="form-group row">
-                                        <label for="full_name" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Title:</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="full_name" class="form-control" name="product_title" placeholder="<?php echo $product_title; ?>" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="email_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Stock:(In kg)</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="full_name" class="form-control" name="product_stock" placeholder="<?php echo $product_title; ?>" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="user_name" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Categories:</label>
-                                        <div class="col-md-6">
-                                            <select name="product_cat" required>
-                                                <option>Select a Category</option>
-                                                <?php
-                                                $get_cats = "select * from categories";
-                                                $run_cats =  mysqli_query($con, $get_cats);
-                                                while ($row_cats = mysqli_fetch_array($run_cats)) {
-                                                    $cat_id = $row_cats['cat_id'];
-                                                    $cat_title = $row_cats['cat_title'];
-                                                    echo "<option value='$cat_id'>$cat_title</option>";
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="phone_number" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product type :</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="phone_number" class="form-control" name="product_type" placeholder="Example . potato" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="present_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Expiry :</label>
-                                        <div class="col-md-6">
-                                            <input id="present_address" class="form-control" type="date" name="product_expiry" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Image :</label>
-                                        <div class="col-md-6">
-                                            <input id="permanent_address" type="file" name="product_image">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="nid_number" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product MRP : (Per kg)</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="nid_number" class="form-control" name="product_price" placeholder="Enter Product price" required>
-                                        </div>
-                                    </div>
-
-                                    <!-- <div class="form-group row">
-                                        <label for="nid_number1" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Base Price:(Per kg)</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="nid_number1" class="form-control" name="product_baseprice" placeholder="Enter Product base price" required>
-                                        </div>
-                                    </div> -->
-
-                                    <div class="form-group row">
-                                        <label for="nid_number2" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder"> Product Description:</label>
-                                        <div class="col-md-6">
-                                            <textarea name="product_desc" id="nid_number2" class="form-control" name="product_desc" rows="3" required></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="nid_number3" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Keywords:</label>
-                                        <div class="col-md-6">
-                                            <input type="text" id="nid_number3" class="form-control" name="product_keywords" placeholder="Example best potatos" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="nid_number4" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Delivery :</label>
-                                        <div class="col-md-6">
-                                            <input type="radio" id="nid_number4" name="product_delivery" value="yes" />Yes
-                                            <input type="radio" id="nid_number4" name="product_delivery" value="no" />No
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn btn-primary" name="insert_pro" style="color:#f5b94a;background-color:black;">
-                                            INSERT
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h1>Loan Information</h1>
+        <div class="loan-info">
+            <?php
+                // Call the function to fetch loan applications
+                if (isset($_SESSION['phonenumber'])) {
+                    $phoneNumber = $_SESSION['phonenumber'];
+                
+                    // Call the getLoanApplications() function with the user's phone number
+                    getLoanApplications($phoneNumber);
+                } else {
+                    // Handle the case where the user is not logged in
+                    echo "User not logged in.";
+                }
+            ?>
+        </div>
     </div>
-    </main>
-    </div>
-
-    <body>
-
+</body>
 </html>

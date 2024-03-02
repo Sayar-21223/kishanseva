@@ -4,19 +4,18 @@
 
 <!DOCTYPE html>
 
-<html style="overflow-x: hidden;">
+<html>
 
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <title>Farmer - Products</title>
+     <title>Farmer Homepage</title>
      <!-- <link rel="stylesheet" href="portal_files/font-awesome.min.css"> -->
      <!-- <script src="../portal_files/c587fc1763.js.download" crossorigin="anonymous"></script> -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
      <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
      <script src="../portal_files/jquery.min.js.download"></script>
@@ -24,28 +23,9 @@
      <script src="../portal_files/bootstrap.min.js.download"></script>
 
      <style>
-                     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
-:root {
-     --green: #282525;
-     --black: #444;
-     --light-color: #777;
-     --text-shadow: #444;
-     --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
-     --border: 0.2rem solid var(--green);
-}
-
-
-* {
-     margin: 0;
-     box-sizing: border-box;
-     font-family: "Poppins", sans-serif;
-     font-size: 20px;
-}
           * {
                margin: 0;
                box-sizing: border-box;
-               
           }
 
 
@@ -470,7 +450,6 @@
                height: auto;
           }
 
-          /* 
           .productbox {
                float: left;
                margin: 15px;
@@ -480,9 +459,9 @@
                border: 2px solid;
                border-color: green;
                border-radius: 10px;
-          } */
+          }
 
-          /* .productbox:hover {
+          .productbox:hover {
                float: left;
                margin: 25px;
                margin-left: 30px;
@@ -495,7 +474,7 @@
                height: 325px;
                width: 240px;
 
-          } */
+          }
 
           .slideshow {
                margin-top: 10px;
@@ -508,7 +487,7 @@
           #navbar {
 
                padding: 20px;
-               color: black;
+               color: green;
                text-decoration: none;
                margin: 20px;
                font-size: 25px;
@@ -517,10 +496,10 @@
 
           /* #navbar:hover {
                padding: 20px;
-               color: orangered;
+               color: green;
                text-decoration: underline;
-               margin: 15px;
-               font-size: 25px;
+               margin: 20px;
+               font-size: 30px;
                font-weight: bolder;
                padding-top: 10px;
           } */
@@ -652,430 +631,360 @@
                margin-left: 290px;
                text-align: center;
           }
-
-          .image {
-               max-width: 200px;
-          }
-
-          .aligncenter {
-               text-align: center;
-          }
-
-          .myfooter {
-               background-color: #292b2c;
-               color: goldenrod;
-               margin-top: 15px;
-          }
-
-          a {
-               color: goldenrod;
-          }
-
-          .navbar-inverse {
-               background: #00cc00;
-               color: black;
-          }
-
-          .navbar-inverse .navbar-brand,
-          .navbar-inverse a {
-               color: black;
-          }
-
-          .navbar-inverse .navbar-nav>li>a {
-               color: clack;
-          }
-
-          .caros {
-               margin-top: 30px;
-
-          }
-
-          hr {
-               border: 0;
-               height: 0.5px;
-               clear: both;
-               display: block;
-               width: 99%;
-               background-color: black;
-               margin-left: 0.5em;
-          }
-
-          img {
-               max-width: 100%;
-               display: inline-block;
-          }
-
-          * {
-               margin: 0;
-               padding: 0;
-               box-sizing: border-box;
-          }
-
-          nav {
-               background-color: #292b2c;
-          }
-
-          .navbar-custom {
-               background-color: #292b2c;
-          }
-
-          /* change the brand and text color */
-          .navbar-custom .navbar-brand,
-          .navbar-custom .navbar-text {
-               background-color: #292b2c;
-          }
-
-          .navbar-custom .navbar-nav .nav-link {
-               background-color: #292b2c;
-          }
-
-          .navbar-custom .nav-item.active .nav-link,
-          .navbar-custom .nav-item:hover .nav-link {
-               background-color: #292b2c;
-          }
-
-          .firstimage {
-               height: 500px;
-               width: 100%;
-          }
-
-          .mybtn {
-               border-color: green;
+          .order {
+               font-size: 30px;
+               /* margin-left:20%; */
+               border-color: #00b300;
                border-style: solid;
-          }
-
-          .card {
-               width: 100%;
-               height: 100%;
-               margin: 10px;
-          }
-
-          .right {
-               display: flex;
-          }
-
-          .left {
-               display: none;
-          }
-
-          .cart {
-               /* margin-left:10px; */
-               margin-right: -9px;
-          }
-
-          .profile {
-               margin-right: 2px;
-
-          }
-
-          .login {
-               margin-right: -2px;
-               margin-top: 12px;
-               display: none;
-          }
-
-          .searchbox {
-               width: 60%;
-          }
-
-          .lists {
-               display: inline-block;
-          }
-
-          .moblists {
-               display: none;
-          }
-
-          .logins {
-               text-align: center;
-               margin-right: -30%;
-               margin-left: 35%;
-          }
-
-          .tab {
-               width: 100%;
-
-               border-style: solid;
-               border-width: 2px;
-               padding: 2px;
-
-          }
-
-          th {
-               border-color: white;
-               border-style: solid;
-               border-width: 2px;
-               padding: 2px;
-
-          }
-
-          .tableyhead {
-
-               color: red;
-
-          }
-
-          .thy {
-               background-color: #555;
-               color: white;
-
-          }
-
-          .trow {
-               align-content: center;
-          }
-
-          .products {
-               margin-left: 12%; 
-               
-          }
-
-          .productbox {
-               margin-left: 15px;
-               float: left;
+               border-radius: 100%;
                padding: 15px;
-               border-style: outline;
-               background-color:#F9B84D;
-               /* border: 4px solid;
-               border-color: black; */
-               border-radius: 10px;
-               margin-bottom:30px
+               margin-top: 20px;
+
+               border-width: 2px;
+
           }
 
-          .productbox img {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: black;
-               /* border-width: 2px; */
-               border-radius: 10px;
+          .order1 {
+               background-color: #FFD700;
+
           }
 
-          .productbox p {
+          .selectsionz{
+               border-radius: 25%;
+          padding: 2%;
+          border-color:black;
+          margin-top: 10px;
+               /* background-color: transparent; */
+               background-color: #FFD700;
+
+
+          }
+
+
+
+          .a1 {
+               /* width:100px; */
+               margin-left: 400px;
+               margin-top: -44px;
+               margin-bottom: 10px;
+               /* margin-bottom: 100px; */
+          }
+
+          ul {
+               list-style: none;
+               /* display: inline-block; */
                text-align: center;
-               font-weight:650;
-               /* text-decoration: underline; */
-          }
-          
-          .productbox img:hover {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: #ffc107;
-               /* border-width: 2px; */
-               border-radius: 10px;
+               /* width:200px; */
           }
 
-          .productbox p:hover {
+          .ash1 {
+               width: 300px;
                text-align: center;
-               text-decoration: underline;
+
+               /* background-color: greenyellow; */
+               display: inline-block;
           }
 
+          .col1 {
+            font-size: 20px;
+            background-color: #f5ca0a;
 
+            border-style: solid;
+            border-radius: 10px;
+            padding: 10px;
+            float: left;
+            width: 250px;
+            margin-left: 100px;
 
-          /* For medium devices (e.g. tablets) */
-          /* @media (min-width: 420px) {
-               img {
-               max-width: 48%;
-               }
-          } */
-          /* For large devices (e.g. desktops) */
-          @media (min-width: 760px) {
-               .resizing {
-                    height: 500px;
-               }
-          }
+        }
+        .col2 {
+            float: left;
+            margin-left: 20px;
 
-          @media only screen and (min-device-width:320px) and (max-device-width:480px) {
-               .image {
-                    max-width: 48%;
-               }
+        }
 
-               .firstimage {
-                    height: auto;
-                    width: 90%;
-               }
+        .text1 {
+            font-size: 20px;
+            height: 50px;
+            width: 300px;
+            border-radius: 10px;
+            border-style: solid;
+            padding: 10px;
+        }
 
-               .card {
-                    width: 80%;
-                    margin-left: 10%;
-                    margin-right: 10%;
+        .grp2 {
+             margin-left: 30px;
+            /* float: left; */
+        }
 
-               }
+        .col3 {
+            background-color: #f5ca0a;
 
-               .col {
-                    margin-top: 20px;
-               }
+            font-size: 20px;
+            border-style: solid;
+            border-radius: 10px;
+            padding: 10px;
+            width: 250px;
+            float: left;
+            margin-right: 20px;
+        }
 
-               .right {
-                    display: none;
-                    background-color: #ff5500;
-               }
+        .col4 {
+            /* margin-left: 20px; */
+            float: left;
 
-               /* 
-           .settings{
-           margin-left:79%;
-       } */
-               .left {
-                    display: flex;
-               }
+        }
 
-               .moblogo {
-                    display: none;
-               }
-
-               .logins {
-                    text-align: center;
-                    margin-right: 35%;
-                    padding: 15px;
-               }
-
-               .searchbox {
-                    width: 95%;
-                    margin-right: 5%;
-                    margin-left: 0%;
-               }
-
-               .moblists {
-                    display: inline-block;
-                    text-align: center;
-                    width: 100%;
-               }
-
-
-          }
      </style>
 
 </head>
 
-<body style="background-color: #ffff84;">
-    <nav class="navbar navbar-expand-xl ">
-        <!-- <a href="#" class="navbar-brand">Academind</a> -->
-        <div class=" flex-row-reverse left ">
+<body>
 
-            <div class="p-2">
-                    <!-- <div class="icon2">
-                <a href="CartPage.php"> <i class="fa" style=" color:green ;font-size:20px;margin-top:-20px;margin-bottom:20px;">&#61562;</i></a> -->
-                    <!-- <span id="icon" style="color:green"> 5 </span>
-            </div>  -->
-            </div>
-            <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
-            <a class="float-left" href="#">
-                    <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
-            </a>
-        </div>
-        <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
-        </button>
-        <a class="float-left" href="/A/index.html">
-            <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px; width: 200px">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <div class="header">
 
+          <a href="Homepage.php"><img id="logo" src="../portal_files/logo.jpg"></a>
 
-
-            <div class="proicon">
-
+          <div class="dropdown">
+               <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="margin-top:-5px;">
+                    <i class="fa fa-bars fa-2x" style="color: white;">
+               </button></i>
+               <ul class="dropdown-menu etc">
                     <?php
-                        if (!isset($_SESSION['phonenumber'])) {
-                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '></div></a>";
-                        }
-                        ?>
-            </div>
-
-            <div class="list-group moblists">
-
-                    <?php
-                        if (isset($_SESSION['phonenumber'])) {
-
-                            echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
-                            echo "<a href='Orders.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
-                            echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
-                        } else {
-                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";
-                        }
-                        ?>
-                    <div class='loginz' style="text-align:center;">
-                        <?php getFarmerUsername(); ?>
-                    </div>
-            </div>
-        </div>
-
-
-
-
-        <div class=" flex-row-reverse right ">
-            <div class="p-2 cart">
-                    <div class='loginz'>
-                        <?php getFarmerUsername(); ?>
-                    </div>
-            </div>
-            <div class="dropdown p-2 settings ">
-            <button class="btn  dropdown-toggle text-success" style="margin-top: -8px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Settings
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <?php
-                            if (isset($_SESSION['phonenumber'])) {
-                                echo "<a href='FarmerProfile2.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
-                                echo "<a href='Transactions.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
-                                echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
-                            } else {
-                                echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
-                            }
-                            ?>
-                    </div>
-            </div>
-            <div class="p-2 cart">
-            <div class='loginz'>
-            <a style="color:#ffff84;text-decoration:none;" href='farmerHomepage.php'>Home</a>
-            </div>
-            </div>
-        </div>
-    </nav>
-          <br>
-          
-
-
-          <br>
-
-
-          <!-- <div class=content_item>
-               <label style="font-size :30px; text-shadow: 1px 1px 1px gray;"><b>All Products</b></label>
-               <?php
-               include("../Includes/db.php");
-               if (isset($_SESSION['phonenumber'])) {
-
-                    echo "<a href='InsertProduct.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               } else {
-                    echo "<a href='../auth/FarmerLogin.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               }
-               ?>
-
-          </div> -->
-
-          <br>
-               <div class="products">
-                    <?php
-                    include("../Includes/db.php");
                     if (isset($_SESSION['phonenumber'])) {
-                         $sess_phone_number = $_SESSION['phonenumber'];
-                         getFarmerProducts();
+                         echo "<li class='options'> <a href='FarmerProfile.php'><label class='makeitgreen'>Profile</label></a><br></li>";
+                         echo "<li class='options'> <a href='Orders.php'><label class='makeitgreen'>Orders</label></a></li>";
+                         echo "<li class='options'> <a href='logout.php'><label class='makeitgreen'>Logout</label></a></li>";
                     } else {
-                         echo "<br><br><h1 align = center style='color:black;'>Please Login</h1><br><br>";
+                         echo "<li class='options'> <a href='../auth/FarmerLogin.php'><label class='makeitgreen'>Login</label></a></li>";
                     }
                     ?>
-               </div>
-               <br> <br><br>
-               
-     </body>
-     <a style="position:absolute;left:50%;bottom:20px;color:#f9b84d;background-color:black;border-radius:6px;" href="InsertProduct.php"><button style="border-radius:6px;padding:4px 6px;color:#f9b84d;background-color:black;">Add New Product</button></a>      
+               </ul>
+          </div>
+
+          <div class="proicon">
+
+               <?php
+               if (!isset($_SESSION['phonenumber'])) {
+                    echo "<a href='../auth/FarmerLogin.php'> <i class='far fa-user-circle ' style='font-size:30px; color: white; padding-top:5px;'></i></a>";
+               } else {
+                    echo "<a href='FarmerProfile.php'> <i class='far fa-user-circle' style='font-size:30px; color: white; padding-top:5px;'></i></a>";
+               }
+               ?>
+          </div>
+
+          <div class="loginz">
+               <?php getFarmerUsername(); ?>
+          </div>
+     </div>
+
+     <br>
+
+     </div>
+
+
+     <div class="row" style="text-align:center;">
+                <div class="col-md-3 col-sm-12">
+                     <a href="farmerHomepage.php" id="navbar"><label style="border:3px solid black;padding:3px 5px;border-radius:6px">Home</label></a>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                     <a href="MyProducts.php" id="navbar"><label style="border:3px solid black;padding:3px 5px;border-radius:6px">My Products</label></a>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                     <a href="Transactions.php" id="navbar"><label style="border:3px solid black;padding:3px 5px;border-radius:6px">My Transactions</label></a>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                     <a href="InsertProduct.php" id="navbar"><label style="border:3px solid black;padding:3px 5px;border-radius:6px">Add Product</label></a>
+                </div>
+           </div>
+
+
+     <ul class="ash">
+          <li class="ash1"> <i class='fas fa-people-carry order order1 '></i>
+               <br><i class="fa fa-check aria" aria-hidden="true"></i><br><button class="selectsionz">Packing</button>
+          </li>
+          <li class="ash1"> <i class="fas fa-truck order order2"></i>
+               <br><i class="fa fa-check aria" aria-hidden="true"></i><br><button class="selectsionz">Dispatch</button>
+          </li>
+          <li class="ash1"> <i class="fas fa-road order order3"></i>
+               <br><i class="fa fa-refresh aria" aria-hidden="true"></i>
+               <br><button class="selectsionz">Half way </button></li>
+          <li class="ash1"><i class="fas fa-map-marker-alt order order4"></i><br><i class="fa fa-times aria" aria-hidden="true"></i>
+               <br><button class="selectsionz">Reached</button>
+          </li>
+     </ul>
+
+<table>
+        <tr id="protitle">
+            <td>
+                <div class="grp1">
+                    <div class="col1 t1"><b> Name</b> </div>
+
+                    <div class="col2"><label class="text1" name="product_title" required>Gladina</label>
+            </td>
+            </div>
+            </div>
+            <td>
+                <div class="grp2">
+
+                    <div class="col3 t1"><b>Phone number</b></div>
+                    <div class="col4">
+                    <label class="text1" name="product_title" >9819104641</label>            </div>
+
+            </td>
+
+            </div>
+
+        </tr>
+        <tr id="protitle">
+            <td>
+                <div class="grp1">
+                    <div class="col1 t1"><b> Address</b> </div>
+
+                    <div class="col2"><label class="text1" name="product_title" required>mumbai</label>
+            </td>
+            </div>
+            </div>
+            <td>
+             
+
+        </tr>
+        <tr>  
+             <td>
+          
+           
+                <div class="grp1 movedown">
+                    <div class="col1 t1"><b> Delivary time</b> </div>
+
+                    <div class="col2"><label class="text1" name="product_title" required>approx 3 am</label>
+            </td>
+            </div>
+            </div>
+            <td>
+           
+                <div class="grp2 movedown">
+
+                    <div class="col3 t1"><b>Delivary date</b></div>
+                    <div class="col4">
+                    <label class="text1" name="product_title" >8th December</label>            </div>
+
+            </td>
+
+            </div>
+          </tr>
+          <tr><td>
+                <div class="grp1">
+                    <div class="col1 t1"><b> Payment Mode</b> </div>
+
+                    <div class="col2"><label class="text1" name="product_title" required>COD</label>
+            </td>
+            </div>
+            </div>
+            <td>
+                <div class="grp2">
+
+                    <div class="col3 t1"><b>Delivary Mode</b></div>
+                    <div class="col4">
+
+                    <label class="text1" name="product_title" >By Farmer</label>            </div>
+
+            </td>
+
+            </div>
+          </tr>
+          <tr><td>
+                <div class="grp1">
+                    <div class="col1 t1 movedown"><b> Item Name</b> </div>
+
+                    <div class="col2"><label class="text1" name="product_title" required>COD</label>
+            </td>
+            </div>
+            </div>
+            
+          </tr>
+          
+        <tr><td>
+                <div class="grp1">
+                    <div class="col1 t1"><b> Price</b> </div>
+
+                    <div class="col2"><label class="text1" name="product_title" required>200</label>
+            </td>
+            </div>
+            </div>
+            <td>
+                <div class="grp2">
+
+                    <div class="col3 t1"><b>Quantity</b></div>
+                    <div class="col4">
+                    <label class="text1" name="product_title" >2 kg</label>            </div>
+
+            </td>
+
+            </div>
+          </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="footer">
+          <label class="payment">Payment Options:-</label>
+          <div class="cash"><img src="../Images/Website/cash.jpg" height="75px" width="125px"></div>
+          <div class="patym"><img src="../Images/Website/petm.jpg" height="75px" width="125px"></div>
+     </div><br><br>
+     <h3><span> GET SOCIAL WITH US </span></h3>
+     </div>
+     <div class="morefooter">
+
+          <div class="call">
+               <i class="fas fa-phone-alt call_color"></i>
+               <a href="#" style="color:black;">+91-8191046421</a>
+          </div>
+
+          <div class="instagram"><img src="../Images/Website/Insta.jpg" height="45px" width="60px">
+          </div>
+
+          <div class="gmail">
+               <img src="../Images/Website/gmail.jpg" height="30px" width="50px">
+          </div>
+
+     </div>
+     <div class="instaid">
+          <div class="text"><a href="#" style="color:black;">@AgroCraft</a></div>
+
+          <div class="gmailid">
+               <a href="#" class="hypher" style="color:black;">agrocraft6@gmail.com</a>
+          </div>
+
+     </div>
+     <div class="copy">
+          <h5 style="test-align:center; padding-top:40px;margin-left:650px; background-color:'grey';">Copyright &copy; 2022 by www.AgroCraft.com</h5>
+     </div>
+
+</body>
+
 </html>
