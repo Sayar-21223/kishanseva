@@ -259,7 +259,7 @@
 								<div class="form-group row">
 									<label for="lisence" class="col-md-4 col-form-label text-md-right"><i class="fas fa-id-badge mr-2"></i><b>Licence</b></label>
 									<div class="col-md-6">
-										<input type="text" id="lisence" class="form-control border border-dark" name="license" placeholder="license" required>
+										<input type="text" id="lisence" class="form-control border border-dark" name="license" placeholder="licence" required>
 									</div>
 								</div>
 
