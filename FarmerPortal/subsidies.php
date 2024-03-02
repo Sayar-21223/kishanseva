@@ -416,8 +416,8 @@ include("../Functions/functions.php");
           }
 
           h2 {
-               color: white;
-               margin-top: 3em;
+               color: #000000;
+               margin-top: 10px;
                text-align: center;
 
           }
@@ -1121,12 +1121,9 @@ margin-left:79%;
      </form>
      <?php
      if (isset($_POST['go'])) {
-          $districtInput = $_POST['districtInput'];
           $stateInput = $_POST['stateInput'];
-          echo $stateInput;
+          
           echo "<br>";
-          echo $districtInput;
-  
           // Display subsidies for the selected state
           echo "<div class='container'>";
           echo "<h2>Subsidies for $stateInput:</h2>";
