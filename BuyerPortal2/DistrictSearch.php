@@ -587,7 +587,7 @@ margin-top:2%;
     <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;margin-right:-9%;font-size:28px;"></i></span>
 </button>
 <a class="float-left" href="bhome.php">
-    <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:50px;">
+    <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px;width:200px">
 </a>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -832,7 +832,7 @@ margin-top:2%;
                                              <div class='card pb-1 pl-1 pr-1 pt-0' style='height:542px'>
                                                   <br>
                                                   <div class='mt-0'><b>
-                                                       <h4><img src='iconsmall.png' style='width: 28px; margin-bottom:  10px;'> $name
+                                                        $name
                                                        </b></h4>
                                                   </div>
                                                   <a href='../BuyerPortal2/ProductDetails.php?id=$product_id'>
@@ -893,7 +893,7 @@ margin-top:2%;
                                    }
                               }
                          } else {
-                              echo "<br><br><hr><h1 align = center>Product Not Available !</h1><br><br><hr>";
+                              echo "<h1 style='margin:150px auto;font-size:50px;text-wrap: nowrap;'>No Farmers Found in this District</h1>";
                          }
                     }
                }

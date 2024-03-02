@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../Styles/navstyle.css">
     <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
     <header class="header">
-            <a href="bhome.php" class="logo" style="margin-left:15px;"><img src="../Images/Website/logo.svg" alt="" width="110px" style="padding:10px 0px;"></i></a>
+            <a href="bhome.php" class="logo" style="margin-left:15px;"><img src="../Images/Website/logo.svg" alt="" height="200px" style="padding:10px 0px; height:110px"></i></a>
         </div>
         <nav class="navbar">
             <a href="bhome.php">Home</a>
@@ -222,7 +222,7 @@
         border-bottom: 1px solid #ffc857;
         /* background-color: #ffc857; */
         line-height: 0.1em;
-        margin: 10px 0 20px;
+        margin: 30px 0 20px;
         font-family: serif;
     }
 
