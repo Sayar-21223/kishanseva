@@ -1,18 +1,15 @@
-<!-- <?php
-     include("../Functions/functions.php");
-     ?> -->
+<?php
+include("../Functions/functions.php");
+?>
 
 <!DOCTYPE html>
-
-<html style="overflow-x: hidden;">
+<html lang="en">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-     <title>Farmer - Products</title>
-     <!-- <link rel="stylesheet" href="portal_files/font-awesome.min.css"> -->
-     <!-- <script src="../portal_files/c587fc1763.js.download" crossorigin="anonymous"></script> -->
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Farmer Product Details</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,7 +19,6 @@
      <script src="../portal_files/jquery.min.js.download"></script>
      <script src="../portal_files/popper.min.js.download"></script>
      <script src="../portal_files/bootstrap.min.js.download"></script>
-
      <style>
                      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
@@ -40,12 +36,11 @@
      margin: 0;
      box-sizing: border-box;
      font-family: "Poppins", sans-serif;
-     font-size: 20px;
+     font-size: 17px;
 }
           * {
                margin: 0;
                box-sizing: border-box;
-               
           }
 
 
@@ -230,19 +225,6 @@
                float: left;
           }
 
-          h3 {
-               width: 100%;
-               text-align: center;
-               border-bottom: 1px solid #000;
-               line-height: 0.1em;
-               margin: 10px 0 20px;
-          }
-
-          h3 span {
-               background: #fff;
-               padding: 0 10px;
-          }
-
           .morefooter {
                height: 100px;
                width: 100%;
@@ -264,33 +246,11 @@
 
           }
 
-          .instagram {
-               margin-top: 10px;
-               float: left;
-               margin-left: 420px;
-          }
-
-          .instaid {
-               height: 10px;
-               width: 100%;
-
-          }
 
           .text {
                float: left;
                margin-left: 735px;
                margin-top: -50px;
-          }
-
-          .gmailid {
-               float: right;
-               margin-right: 80px;
-               margin-top: -60px;
-          }
-
-          .copy {
-               float: left;
-               margin-top: -65px;
           }
 
           body {
@@ -309,13 +269,6 @@
           .add_button {
                float: right;
                text-align: center;
-          }
-
-
-          h1 {
-               font-family: 'Times New Roman', Times, serif;
-               color: white;
-
           }
 
           .lost {
@@ -341,12 +294,6 @@
                float: right;
           }
 
-          h2 {
-               color: white;
-               margin-top: 3em;
-               text-align: center;
-
-          }
 
           .hii {
                float: right;
@@ -393,12 +340,6 @@
           }
 
 
-          h1 {
-               font-family: 'Times New Roman', Times, serif;
-               color: white;
-
-          }
-
           .lost {
                font-family: Verdana, Geneva, Tahoma, sans-serif;
                color: black;
@@ -415,13 +356,6 @@
           .button {
                position: relative;
                float: right;
-          }
-
-          h2 {
-               color: white;
-               margin-top: 3em;
-               text-align: center;
-
           }
 
           .hii {
@@ -470,7 +404,6 @@
                height: auto;
           }
 
-          /* 
           .productbox {
                float: left;
                margin: 15px;
@@ -480,9 +413,9 @@
                border: 2px solid;
                border-color: green;
                border-radius: 10px;
-          } */
+          }
 
-          /* .productbox:hover {
+          .productbox:hover {
                float: left;
                margin: 25px;
                margin-left: 30px;
@@ -495,7 +428,7 @@
                height: 325px;
                width: 240px;
 
-          } */
+          }
 
           .slideshow {
                margin-top: 10px;
@@ -508,22 +441,22 @@
           #navbar {
 
                padding: 20px;
-               color: black;
+               color: green;
                text-decoration: none;
                margin: 20px;
                font-size: 25px;
                padding-top: 10px;
           }
 
-          /* #navbar:hover {
+          #navbar:hover {
                padding: 20px;
-               color: orangered;
+               color: green;
                text-decoration: underline;
                margin: 15px;
                font-size: 25px;
                font-weight: bolder;
                padding-top: 10px;
-          } */
+          }
 
           #navbar i {
                padding-right: 1%;
@@ -593,69 +526,7 @@
                margin-right: 150px;
           }
 
-          .pictus {
-               margin-top: 200px;
-               /* background-color: red; */
-          }
 
-          .pictus>img {
-               height: 100px;
-
-               width: 150px;
-          }
-
-          .imag1 {
-               margin-top: 20px;
-               margin-left: 180px;
-          }
-
-          .imag2 {
-               margin-top: 20px;
-
-               margin-left: 340px;
-
-          }
-
-          .imag3 {
-               margin-top: 20px;
-
-               margin-left: 350px;
-
-          }
-
-          .imag1_under {
-               max-width: 250px;
-               width: 100%;
-               min-height: 100px;
-               margin-left: 100px;
-               text-align: center;
-               font-size: 20px;
-
-          }
-
-          .imag2_under {
-               max-width: 250px;
-               width: 100%;
-               min-height: 100px;
-               margin-left: 290px;
-               margin-top: 20px;
-               text-align: center;
-               font-size: 20px;
-          }
-
-          .imag3_under {
-               max-width: 250px;
-               width: 100%;
-               font-size: 20px;
-
-               min-height: 100px;
-               margin-left: 290px;
-               text-align: center;
-          }
-
-          .image {
-               max-width: 200px;
-          }
 
           .aligncenter {
                text-align: center;
@@ -792,88 +663,10 @@
                margin-left: 35%;
           }
 
-          .tab {
-               width: 100%;
-
-               border-style: solid;
-               border-width: 2px;
-               padding: 2px;
+          .blackgoldie {
+               background-color: #292b2c;
 
           }
-
-          th {
-               border-color: white;
-               border-style: solid;
-               border-width: 2px;
-               padding: 2px;
-
-          }
-
-          .tableyhead {
-
-               color: red;
-
-          }
-
-          .thy {
-               background-color: #555;
-               color: white;
-
-          }
-
-          .trow {
-               align-content: center;
-          }
-
-          .products {
-               margin-left: 12%; 
-               
-          }
-
-          .productbox {
-               margin-left: 15px;
-               float: left;
-               padding: 15px;
-               border-style: outline;
-               background-color:#F9B84D;
-               /* border: 4px solid;
-               border-color: black; */
-               border-radius: 10px;
-               margin-bottom:30px;
-          }
-
-          .productbox img {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: black;
-               /* border-width: 2px; */
-               border-radius: 10px;
-          }
-
-          .productbox p {
-               text-align: center;
-               font-weight:650;
-               /* text-decoration: underline; */
-          }
-          
-          .productbox img:hover {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: #ffc107;
-               /* border-width: 2px; */
-               border-radius: 10px;
-          }
-
-          .productbox p:hover {
-               text-align: center;
-               text-decoration: underline;
-          }
-
-
 
           /* For medium devices (e.g. tablets) */
           /* @media (min-width: 420px) {
@@ -914,10 +707,7 @@
                     background-color: #ff5500;
                }
 
-               /* 
-           .settings{
-           margin-left:79%;
-       } */
+
                .left {
                     display: flex;
                }
@@ -930,6 +720,12 @@
                     text-align: center;
                     margin-right: 35%;
                     padding: 15px;
+               }
+
+               .desc {
+                    margin-top: 15px;
+                    height: 100px;
+
                }
 
                .searchbox {
@@ -947,135 +743,199 @@
 
           }
      </style>
-
 </head>
 
 <body style="background-color: #ffff84;">
-    <nav class="navbar navbar-expand-xl ">
-        <!-- <a href="#" class="navbar-brand">Academind</a> -->
-        <div class=" flex-row-reverse left ">
+     <nav class="navbar navbar-expand-xl ">
+          <!-- <a href="#" class="navbar-brand">Academind</a> -->
+          <div class=" flex-row-reverse left ">
 
-            <div class="p-2">
+               <div class="p-2">
                     <!-- <div class="icon2">
-                <a href="CartPage.php"> <i class="fa" style=" color:green ;font-size:20px;margin-top:-20px;margin-bottom:20px;">&#61562;</i></a> -->
+                    <a href="CartPage.php"> <i class="fa" style=" color:green ;font-size:20px;margin-top:-20px;margin-bottom:20px;">&#61562;</i></a> -->
                     <!-- <span id="icon" style="color:green"> 5 </span>
-            </div>  -->
-            </div>
-            <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
-            <a class="float-left" href="#">
-                    <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
-            </a>
-        </div>
-        <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
-        </button>
-        <a class="float-left" href="/A/index.html">
-            <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px; width: 200px">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>  -->
+               </div>
+               <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
+               <a class="float-left" href="#">
+                    <img src="logo_farm.png" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
+               </a>
+          </div>
+          <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
+          </button>
+          <a class="float-left" href="farmerHomepage.php">
+               <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:50px;">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
 
-            <div class="proicon">
-
-                    <?php
-                        if (!isset($_SESSION['phonenumber'])) {
-                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '></div></a>";
-                        }
-                        ?>
-            </div>
-
-            <div class="list-group moblists">
+               <div class="proicon">
 
                     <?php
-                        if (isset($_SESSION['phonenumber'])) {
-
-                            echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
-                            echo "<a href='Transactions.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
-                            echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
-                        } else {
-                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";
-                        }
-                        ?>
-                    <div class='loginz' style="text-align:center;">
-                        <?php getFarmerUsername(); ?>
-                    </div>
-            </div>
-        </div>
-
-
-
-
-        <div class=" flex-row-reverse right ">
-            <div class="p-2 cart">
-                    <div class='loginz'>
-                        <?php getFarmerUsername(); ?>
-                    </div>
-            </div>
-            <div class="dropdown p-2 settings ">
-            <button class="btn  dropdown-toggle text-success" style="margin-top: -8px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Settings
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <?php
-                            if (isset($_SESSION['phonenumber'])) {
-                                echo "<a href='FarmerProfile2.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
-                                echo "<a href='Transactions.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
-                                echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
-                            } else {
-                                echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
-                            }
-                            ?>
-                    </div>
-            </div>
-            <div class="p-2 cart">
-            <div class='loginz'>
-            <a style="color:#ffff84;text-decoration:none;" href='farmerHomepage.php'>Home</a>
-            </div>
-            </div>
-        </div>
-    </nav>
-          <br>
-          
-
-
-          <br>
-
-
-          <!-- <div class=content_item>
-               <label style="font-size :30px; text-shadow: 1px 1px 1px gray;"><b>All Products</b></label>
-               <?php
-               include("../Includes/db.php");
-               if (isset($_SESSION['phonenumber'])) {
-
-                    echo "<a href='InsertProduct.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               } else {
-                    echo "<a href='../auth/FarmerLogin.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               }
-               ?>
-
-          </div> -->
-
-          <br>
-               <div class="products">
-                    <?php
-                    include("../Includes/db.php");
-                    if (isset($_SESSION['phonenumber'])) {
-                         $sess_phone_number = $_SESSION['phonenumber'];
-                         getFarmerProducts();
-                    } else {
-                         echo "<br><br><h1 align = center style='color:black;'>Please Login</h1><br><br>";
+                    if (!isset($_SESSION['phonenumber'])) {
+                         echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '></div></a>";
                     }
                     ?>
                </div>
-               <br> <br><br>
-               
-     </body>
-     <a style="position:absolute;left:50%;bottom:20px;color:#f9b84d;background-color:black;border-radius:6px;" href="InsertProduct.php"><button style="border-radius:6px;padding:4px 6px;color:#f9b84d;background-color:black;">Add New Product</button></a>      
+
+               <div class="list-group moblists">
+
+                    <?php
+                    if (isset($_SESSION['phonenumber'])) {
+
+                         echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
+                         echo "<a href='Orders.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
+                         echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
+                    } else {
+                         echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";
+                    }
+                    ?>
+                    <div class='loginz' style="text-align:center;">
+                         <?php getFarmerUsername(); ?>
+                    </div>
+               </div>
+          </div>
+
+
+
+
+          <div class=" flex-row-reverse right ">
+               <div class="p-2 cart">
+                    <!-- <div class="icon2">
+                    <a href="CartPage.php"> <i class="fa" style="font-size:30px; color:green;margin-top:-20px;">&#61562;</i></a>
+                    <span id="icon" style="color:green"> 5 </span>
+                </div> -->
+                    <div class='loginz'>
+                         <?php getFarmerUsername(); ?>
+                    </div>
+               </div>
+               <div class="dropdown p-2 settings ">
+                    <button class="btn  dropdown-toggle text-success" style="margin-top:-7px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Settings
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                         <?php
+                         if (isset($_SESSION['phonenumber'])) {
+                              echo "<a href='FarmerProfile.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
+                              echo "<a href='Orders.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
+                              echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
+                         } else {
+                              echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
+                         }
+                         ?>
+                    </div>
+               </div>
+          </div>
+     </nav>
+     <br>
+
+
+     <?php
+     include("../Includes/db.php");
+     $sess_phone_number = $_SESSION['phonenumber'];
+     // getFarmerProductDetails();
+     global $con;
+     if (isset($_GET['id'])) {
+          $prod_id = $_GET['id'];
+          $query = "select * from products where product_id=" . $prod_id;
+          $run_query = mysqli_query($con, $query);
+          $resultCheck = mysqli_num_rows($run_query);
+          if ($resultCheck > 0) {
+               while ($rows = mysqli_fetch_array($run_query)) {
+                    $product_title = $rows['product_title'];
+                    $product_image = $rows['product_image'];
+                    $product_type = $rows['product_type'];
+                    $product_stock = $rows['product_stock'];
+                    $product_description = $rows['product_desc'];
+                    $product_price = $rows['product_price'];
+                    $product_base_price = $rows['product_price'];
+                    $product_delivery = $rows['product_delivery'];
+                    $product_cat = $rows['product_cat'];
+
+                    // echo "<div class='row'>
+                    //         <div class='col col-md-6'>
+                    //             <img src='../Admin/product_images/$product_image' class='rounded mx-auto d-block bord' style='float:left;' height='250px' width='300px' >
+                    //             <h4>$product_type</h4>
+                    //         </div>
+                    //         <div class='col col-md-6'><br>
+                    //           <h3 style='font-weight:bold;'>" . $product_title."</h3><br>"  
+                    //             . " product type  :  " . $product_type."<br>" 
+                    //             . " product stock  :  " . $product_stock."<br>"
+                    //             . " product Description  :  " . $product_description."<br>" 
+                    //             . " product price  :  " . $product_price."<br>" 
+                    //             . " product Delivery  :  " . $product_delivery."<br>"
+                    //             . " product category  :  " . $product_cat ."<br>".
+                    //         "</div> </div>";
+                    if ($product_stock == 0) {
+                         $str = "Not In Stock";
+                    } else {
+                         $str = "In Stock";
+                    }
+                    if ($product_delivery == "no") {
+                         $del = "Not Applicable";
+                    } else {
+                         $del = "Yes,Applicable";
+                    }
+
+                    $space = "....";
+                    echo "<div class='container' style='margin-top:80px;'>
+                                   <div class='row'>
+                                        <div class='col-md-6' style='padding:7px; margin-top:15px;'>
+                                             <img src='../Admin/product_images/$product_image' class='rounded mx-auto d-block bord' height='250px' width='300px' >      
+                                             <br>
+                                             <div class='row'>
+                                                  <div class='col-md-12'>
+                                                       <h3 class='text-center' style='font-weight:bold;'>$product_type</h3>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class='col-md-6 blackgoldie'>
+                                             <div class='row'>
+                                                  <div class='col-md-12 bottom-rule aligncenter'>
+                                                       <h1 style='color:goldenrod;padding:10px;'>$product_title</h1>
+                                                  </div>
+                                             </div>
+                                             <h3  style='color:white;padding:7px;'>Rs. " . $product_price . ".00 per Kg</h3>
+                                             <hr/>
+                                             <div class='row'>
+                                                  <div class='col-md-12 text-center'>
+                                                       <h3 style='color:green;padding:7px;'>$str<h3>
+                                                  </div>
+                                             </div>
+                                             <div class='row'>
+                                                  <div class='col-md-12 text-center'>
+                                                       <h3 style='color:white;padding:7px;'><span class='monospaced'>Product stock  : " . $product_stock . " Kgs" . "</span><h3>
+                                                  </div>
+                                             </div>
+                                             <div class='row' style='padding:7px;'>
+                                                  <div class='row text-center ml-4 mt-3' >
+                                                       <i class='fa fa-truck fa-2x' aria-hidden='true' style='color:goldenrod;'> </i>
+                                                       <h3 style='color:white;'>   Product Delivery : " . $del . "<h3>
+                                                  </div>
+                                             </div>
+
+                                             <div class='row' style='padding:7px; margin-bottom:15px;' >
+                                                  <div class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 aligncenter'> <a href='EditProduct.php?id=$prod_id' class='btn btn-warning border-secondary' style='color:black'><b>Edit Product</b></a></div>
+                                                  <div class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 aligncenter'> <a href='Transactions.php' class='btn btn-warning border-secondary' style='color:black'><b>My Transaction</b></a></div>
+                                             </div>
+                                        </div>         
+                                   </div>
+                              </div>
+                              ";
+               }
+          }
+     } else {
+          echo "<br><br><h1 align = center>Product Not Uploaded</h1><br><br>";
+     }
+     ?>
+
+
+
+     <br><br>
+     
+
+</body>
+
 </html>
