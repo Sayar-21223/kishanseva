@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root {
+  --green: #282525;
+  --black: #444;
+  --light-color: #777;
+  --text-shadow: #444;
+  --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  --border: 0.2rem solid var(--green);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  background-color: #ffff84;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  color: var(--green);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.btn span {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--green);
+  color: #fff;
+  margin-left: 0.5rem;
+}
+.btn:hover {
+  background: var(--green);
+  color: #fff;
+}
+.btn:hover span {
+  color: var(--green);
+  background: #fff;
+  margin-left: 1rem;
+}
+section {
+  padding: 2rem 9%;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  background-color: rgb(240, 171, 42);
+  box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.8);
+  width: 90%;
+  margin: 190px auto;
+  border-radius: 50px;
+}
+.home .image {
+  flex: 1 1 10rem;
+
+  margin-bottom: 20px;
+}
+.home .image svg {
+  width: 300px;
+  height: 300px;
+}
+.home .content {
+  flex: 1 1 45rem;
+}
+.home .content h3 {
+  font-size: 4.5rem;
+}
+.home .content h3 {
+  font-size: 4.5rem;
+  color: var(--black);
+  line-height: 1.8;
+  text-shadow: var(--text-shadow);
+}
+.home .content p {
+  font-size: 1.7rem;
+  color: rgb(235, 230, 210);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+}
+.login .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 115px;
+}
+.login .box-container .box {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  /* border: var(--border); */
+  padding: 2.5rem;
+}
+.login .box-container .box i {
+  color: var(--green);
+  font-size: 5rem;
+}
+.login .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.login .box-container .box p {
+  color: var(--light-color);
+  font-size: 1.4rem;
+  line-height: 2;
+}
+.login h1 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.login h1 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+#container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: auto;
+}
+#Farmerbutton {
+    align-items: center;
+    background-color: transparent;
+    font-size: 90px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20%;
+    border-color: black;
+  }
+  
+  #Buyerbutton {
+    align-items: center;
+    background-color: transparent;
+    font-size: 90px;
+    margin-left: 10%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20%;
+    border-color: black;
+  }
+  
+  #link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  #link:hover {
+    color: rgb(167, 222, 78);
+    border-radius: 20%;
+    border-style: outset;
+    border-color: rgb(155, 248, 4);
+    font-weight: bolder;
+    border-width: 4px;
+  }
+  .header {
+    padding-right: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--green);
+  }
+  .header .logo i {
+    color: var(--green);
+    font-size: 6rem;
+  }
+  .header .navbar a {
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+  }
+  .header .navbar a:hover {
+    color: #e8e83e;
+  }
+  .navbar {
+    margin-right: 50px;
+  }
+  
