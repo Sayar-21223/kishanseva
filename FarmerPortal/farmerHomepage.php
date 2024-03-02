@@ -858,91 +858,91 @@ svg{
 
  </head>
 
- <body style="background-color: #ffff84;">
-      <nav class="navbar navbar-expand-xl ">
-           <!-- <a href="#" class="navbar-brand">Academind</a> -->
-           <div class=" flex-row-reverse left ">
+<body style="background-color: #ffff84;">
+    <nav class="navbar navbar-expand-xl ">
+        <!-- <a href="#" class="navbar-brand">Academind</a> -->
+        <div class=" flex-row-reverse left ">
 
-                <div class="p-2">
-                     <!-- <div class="icon2">
-                    <a href="CartPage.php"> <i class="fa" style=" color:green ;font-size:20px;margin-top:-20px;margin-bottom:20px;">&#61562;</i></a> -->
-                     <!-- <span id="icon" style="color:green"> 5 </span>
-                </div>  -->
-                </div>
-                <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
-                <a class="float-left" href="#">
-                     <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
-                </a>
-           </div>
-           <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
-           </button>
-           <a class="float-left" href="/A/index.html">
-                <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px; width: 200px">
-           </a>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-
-                <div class="proicon">
-
-                     <?php
-                         if (!isset($_SESSION['phonenumber'])) {
-                              echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '></div></a>";
-                         }
-                         ?>
-                </div>
-
-                <div class="list-group moblists">
-
-                     <?php
-                         if (isset($_SESSION['phonenumber'])) {
-
-                              echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
-                              echo "<a href='Transactions.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
-                              echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
-                         } else {
-                              echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";
-                         }
-                         ?>
-                     <div class='loginz' style="text-align:center;">
-                          <?php getFarmerUsername(); ?>
-                     </div>
-                </div>
-           </div>
+            <div class="p-2">
+                    <!-- <div class="icon2">
+                <a href="CartPage.php"> <i class="fa" style=" color:green ;font-size:20px;margin-top:-20px;margin-bottom:20px;">&#61562;</i></a> -->
+                    <!-- <span id="icon" style="color:green"> 5 </span>
+            </div>  -->
+            </div>
+            <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
+            <a class="float-left" href="#">
+                    <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
+            </a>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
+        </button>
+        <a class="float-left" href="/A/index.html">
+            <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px; width: 200px">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
 
+            <div class="proicon">
 
-           <div class=" flex-row-reverse right ">
-                <div class="p-2 cart">
-                     <div class='loginz'>
-                          <?php getFarmerUsername(); ?>
-                     </div>
-                </div>
-                <div class="dropdown p-2 settings ">
-                <button class="btn  dropdown-toggle text-success" style="margin-top: -8px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Settings
-                     </button>
-                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <?php
-                              if (isset($_SESSION['phonenumber'])) {
-                                   echo "<a href='FarmerProfile2.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
-                                   echo "<a href='Transactions.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
-                                   echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
-                              } else {
-                                   echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
-                              }
-                              ?>
-                     </div>
-                </div>
-                <div class="p-2 cart">
-               <div class='loginz'>
-               <a style="color:#ffff84;text-decoration:none;" href='farmerHomepage.php'>Home</a>
-               </div>
-                </div>
-           </div>
-      </nav>
+                    <?php
+                        if (!isset($_SESSION['phonenumber'])) {
+                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '></div></a>";
+                        }
+                        ?>
+            </div>
+
+            <div class="list-group moblists">
+
+                    <?php
+                        if (isset($_SESSION['phonenumber'])) {
+
+                            echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
+                            echo "<a href='Transactions.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
+                            echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
+                        } else {
+                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";
+                        }
+                        ?>
+                    <div class='loginz' style="text-align:center;">
+                        <?php getFarmerUsername(); ?>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+        <div class=" flex-row-reverse right ">
+            <div class="p-2 cart">
+                    <div class='loginz'>
+                        <?php getFarmerUsername(); ?>
+                    </div>
+            </div>
+            <div class="dropdown p-2 settings ">
+            <button class="btn  dropdown-toggle text-success" style="margin-top: -8px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Settings
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <?php
+                            if (isset($_SESSION['phonenumber'])) {
+                                echo "<a href='FarmerProfile2.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
+                                echo "<a href='Transactions.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
+                                echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
+                            } else {
+                                echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
+                            }
+                            ?>
+                    </div>
+            </div>
+            <div class="p-2 cart">
+            <div class='loginz'>
+            <a style="color:#ffff84;text-decoration:none;" href='farmerHomepage.php'>Home</a>
+            </div>
+            </div>
+        </div>
+    </nav>
       <br>
       
 
