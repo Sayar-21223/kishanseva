@@ -1126,15 +1126,41 @@ margin-left:79%;
           echo $stateInput;
           echo "<br>";
           echo $districtInput;
-
-          if ($stateInput != '0' && $districtInput == 'Select District') {
-               echo "<script>window.open('StateSearch.php?state=$stateInput','_self')</script>";
-          } else {
-               echo "<script>window.open('DistrictSearch.php?district=$districtInput','_self')</script>";
+  
+          // Display subsidies for the selected state
+          echo "<div class='container'>";
+          echo "<h2>Subsidies for $stateInput:</h2>";
+          echo "<ul>";
+          // Add subsidies for each state here
+          switch ($stateInput) {
+              case 'UTTAR PRADESH':
+                  echo "<li>Mukhyamantri Saur Krishi Pump Yojana</li>";
+                  echo "<li>State-sponsored scheme promoting the use of biofertilizers by providing subsidies and incentives to farmers.</li>";
+                  break;
+              case 'TAMIL NADU':
+                  echo "<li>Amma Biofertilizer Scheme</li>";
+                  echo "<li>Direct benefit transfer scheme providing financial assistance to small and marginal farmers, landless agricultural households, and vulnerable agricultural workers.</li>";
+                  break;
+              case 'WEST BENGAL':
+                  echo "<li> Krishak Bandhu” (Assured Income) scheme: </li> ";
+                  echo "<li> (a) An assured sum of ₹10,000/- per acre per year will be given to the farmers who have 1 acre or more cultivable land.";
+                  echo "<li> (b) An assured sum of ₹4,000/- per acre per year will be given to the farmers who have less than 1 acre of cultivable land.";
+              case 'GUJARAT':
+                  echo "<li>Mukhyamantri Kisan Sahay Yojana</li>";
+                  echo "<li>State-sponsored crop insurance scheme providing financial protection to farmers against crop loss due to natural calamities, pests, and diseases.</li>";
+                  break;
+              case 'ODISHA':
+                  echo "<li>KALIA Scheme</li>";
+                  echo "<li>Aims to promote investment in agriculture by providing various incentives and subsidies to farmers and agribusinesses.</li>";
+                  break;
+              default:
+                  echo "<li>No subsidies available for this state.</li>";
+                  break;
           }
-     }
-
-     ?>
-</body>
-
-</html>
+          echo "</ul>";
+          echo "</div>";
+      }
+      ?>
+  </body>
+  
+  </html>
