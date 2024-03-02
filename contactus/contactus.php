@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #ffff84;">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,7 @@
   <title>Document</title>
   <script src="https://kit.fontawesome.com/125372cbb9.js" crossorigin="anonymous"></script>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
     .heading {
       text-align: center;
       padding-bottom: 2rem;
@@ -33,7 +34,7 @@
     }
 
     .login .box-container .box i {
-      color: #E8E83E;
+      color: black;
       font-size: 5rem;
     }
 
@@ -68,7 +69,7 @@
 
     .heading1 span {
       text-transform: uppercase;
-      color: var(--green);
+      color: black;
     }
 
     .container2 {
@@ -85,7 +86,7 @@
       position: relative;
       width: 300px;
       height: 400px;
-      background: rgba(255, 255, 255, 0.05);
+      background: #fff;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
       border-radius: 15px;
       display: flex;
@@ -116,7 +117,7 @@
       height: 150px;
       border-radius: 50%;
       overflow: hidden;
-      border: 10px solid rgba(22, 160, 133, 0.9);
+      border: 10px solid orangered;
     }
 
     .container2 .card .content1 .imgbx img {
@@ -129,7 +130,7 @@
     }
 
     .container2 .card .content1 .contentbx h3 {
-      color: #16a085;
+      color: orangered;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 800;
@@ -145,6 +146,7 @@
       font-weight: 300;
       text-transform: initial;
       font-weight: bold;
+      font-family: poppins;
 
     }
 
@@ -169,7 +171,7 @@
     }
 
     .container2 .card .sci li a {
-      color: #16a085;
+      color: orangered;
       font-size: 30px;
     }
 
@@ -177,11 +179,12 @@
       font-size: 50px;
       text-align: center;
       margin-top: 150px;
+      font-family: poppins;
     }
   </style>
 </head>
 
-<body>
+<body >
   <section class="team" id="team">
     <h1 class="heading" style="margin-top: 80px">Our Team</h1>
     <div class="container2">
