@@ -186,7 +186,7 @@
         }
     </style>
     <header class="header">
-            <a href="#home" class="logo" style="margin-left:50px;"><img src="../Images/Website/logo.svg" alt="" height="110px" width="200px" ></i></a>
+            <a href="/kishanseva/index.html" class="logo" style="margin-left:50px;"><img src="../Images/Website/logo.svg" alt="" height="110px" width="200px" ></i></a>
         </div>
         <nav class="navbar">
             <a href="../index.html">Home</a>
