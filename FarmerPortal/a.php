@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
         // Display the button
         echo "Your Average Of Last Three Months Are ₹$average <br>";
         echo "Your Are Eligable To Apply For A Loan<br>";
-        echo '<button>Generate Button</button>';
+        echo '<a href="loan.php"><button>Apply Now</button></a>';
     } else {
         // Do not display the button
         echo 'Average is not greater than 5000.';
