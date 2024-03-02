@@ -1058,6 +1058,7 @@ padding-top: 10px;
                          <th>Delivery Address</th>
                          <th>Quantity</th>
                          <th>Amount</th>
+
                     </thead>
 
 
