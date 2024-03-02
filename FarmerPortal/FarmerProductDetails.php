@@ -746,89 +746,75 @@ include("../Functions/functions.php");
 </head>
 
 <body style="background-color: #ffff84;">
-     <nav class="navbar navbar-expand-xl ">
-          <!-- <a href="#" class="navbar-brand">Academind</a> -->
-          <div class=" flex-row-reverse left ">
+<nav class="navbar navbar-expand-xl ">
+        <!-- <a href="#" class="navbar-brand">Academind</a> -->
+        <div class=" flex-row-reverse left ">
 
-               <div class="p-2">
+            <div class="p-2">
                     <!-- <div class="icon2">
-                    <a href="CartPage.php"> <i class="fa" style=" color:green ;font-size:20px;margin-top:-20px;margin-bottom:20px;">&#61562;</i></a> -->
+                <a href="CartPage.php"> <i class="fa" style=" color:green ;font-size:20px;margin-top:-20px;margin-bottom:20px;">&#61562;</i></a> -->
                     <!-- <span id="icon" style="color:green"> 5 </span>
-                </div>  -->
-               </div>
-               <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
-               <a class="float-left" href="#">
-                    <img src="logo_farm.png" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
-               </a>
-          </div>
-          <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
-          </button>
-          <a class="float-left" href="farmerHomepage.php">
-               <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:50px;">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div>  -->
+            </div>
+            <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
+            <a class="float-left" href="#">
+                    <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
+            </a>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
+        </button>
+        <a class="float-left" href="/A/index.html">
+            <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px; width: 200px">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
 
-               <div class="proicon">
-
-                    <?php
-                    if (!isset($_SESSION['phonenumber'])) {
-                         echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '></div></a>";
-                    }
-                    ?>
-               </div>
-
-               <div class="list-group moblists">
+            <div class="proicon">
 
                     <?php
-                    if (isset($_SESSION['phonenumber'])) {
+                        if (!isset($_SESSION['phonenumber'])) {
+                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '></div></a>";
+                        }
+                        ?>
+            </div>
 
-                         echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
-                         echo "<a href='Orders.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
-                         echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
-                    } else {
-                         echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";
-                    }
-                    ?>
+            <div class="list-group moblists">
+
+                    <?php
+                        if (isset($_SESSION['phonenumber'])) {
+
+                            echo "<a href='FarmerProfile.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
+                            echo "<a href='Transactions.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Orders</a>";
+                            echo "<a href='logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
+                        } else {
+                            echo "<a href='../auth/FarmerLogin.php'> <div class='text-success  logins '>Login</div></a>";
+                        }
+                        ?>
                     <div class='loginz' style="text-align:center;">
-                         <?php getFarmerUsername(); ?>
+                        <?php getFarmerUsername(); ?>
                     </div>
-               </div>
-          </div>
+            </div>
+        </div>
 
 
 
 
-          <div class=" flex-row-reverse right ">
-               <div class="p-2 cart">
-                    <!-- <div class="icon2">
-                    <a href="CartPage.php"> <i class="fa" style="font-size:30px; color:green;margin-top:-20px;">&#61562;</i></a>
-                    <span id="icon" style="color:green"> 5 </span>
-                </div> -->
+        <div class=" flex-row-reverse right ">
+            <div class="p-2 cart">
                     <div class='loginz'>
-                         <?php getFarmerUsername(); ?>
+                        <?php getFarmerUsername(); ?>
                     </div>
-               </div>
-               <div class="dropdown p-2 settings ">
-                    <button class="btn  dropdown-toggle text-success" style="margin-top:-7px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Settings
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <?php
-                         if (isset($_SESSION['phonenumber'])) {
-                              echo "<a href='FarmerProfile.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
-                              echo "<a href='Orders.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
-                              echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
-                         } else {
-                              echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
-                         }
-                         ?>
-                    </div>
-               </div>
-          </div>
-     </nav>
+            </div>
+            
+            <div class="p-2 cart">
+            <div class='loginz'>
+            <a style="color:#ffff84;text-decoration:none;" href='farmerHomepage.php'>Home</a>
+            </div>
+            </div>
+        </div>
+    </nav>
      <br>
 
 
@@ -853,21 +839,6 @@ include("../Functions/functions.php");
                     $product_base_price = $rows['product_price'];
                     $product_delivery = $rows['product_delivery'];
                     $product_cat = $rows['product_cat'];
-
-                    // echo "<div class='row'>
-                    //         <div class='col col-md-6'>
-                    //             <img src='../Admin/product_images/$product_image' class='rounded mx-auto d-block bord' style='float:left;' height='250px' width='300px' >
-                    //             <h4>$product_type</h4>
-                    //         </div>
-                    //         <div class='col col-md-6'><br>
-                    //           <h3 style='font-weight:bold;'>" . $product_title."</h3><br>"  
-                    //             . " product type  :  " . $product_type."<br>" 
-                    //             . " product stock  :  " . $product_stock."<br>"
-                    //             . " product Description  :  " . $product_description."<br>" 
-                    //             . " product price  :  " . $product_price."<br>" 
-                    //             . " product Delivery  :  " . $product_delivery."<br>"
-                    //             . " product category  :  " . $product_cat ."<br>".
-                    //         "</div> </div>";
                     if ($product_stock == 0) {
                          $str = "Not In Stock";
                     } else {
@@ -880,10 +851,10 @@ include("../Functions/functions.php");
                     }
 
                     $space = "....";
-                    echo "<div class='container' style='margin-top:80px;'>
+                    echo "<div class='container' style='margin-top:40px;background-color:#f9b84d;width:900px;border-radius:20px;'>
                                    <div class='row'>
-                                        <div class='col-md-6' style='padding:7px; margin-top:15px;'>
-                                             <img src='../Admin/product_images/$product_image' class='rounded mx-auto d-block bord' height='250px' width='300px' >      
+                                        <div class='col-md-6' style='padding:7px; margin-top:15px;border-radius:20px'>
+                                             <img src='../Admin/product_images/$product_image' class='rounded mx-auto d-block bord' height='350px' width='400px;'  >      
                                              <br>
                                              <div class='row'>
                                                   <div class='col-md-12'>
@@ -891,13 +862,13 @@ include("../Functions/functions.php");
                                                   </div>
                                              </div>
                                         </div>
-                                        <div class='col-md-6 blackgoldie'>
+                                        <div class='col-md-6 blackgoldie' style='background-color:#fff;border-radius:0 20px 20px 0;'>
                                              <div class='row'>
                                                   <div class='col-md-12 bottom-rule aligncenter'>
-                                                       <h1 style='color:goldenrod;padding:10px;'>$product_title</h1>
+                                                       <h1 style='color:black;padding:10px;'>$product_title</h1>
                                                   </div>
                                              </div>
-                                             <h3  style='color:white;padding:7px;'>Rs. " . $product_price . ".00 per Kg</h3>
+                                             <h3  align='center' style='color:black;margin:auto;'>Rs. " . $product_price . ".00 per Kg</h3>
                                              <hr/>
                                              <div class='row'>
                                                   <div class='col-md-12 text-center'>
@@ -906,19 +877,18 @@ include("../Functions/functions.php");
                                              </div>
                                              <div class='row'>
                                                   <div class='col-md-12 text-center'>
-                                                       <h3 style='color:white;padding:7px;'><span class='monospaced'>Product stock  : " . $product_stock . " Kgs" . "</span><h3>
+                                                       <h3 style='color:black;padding:7px;'><span class='monospaced'>Product stock  : " . $product_stock . " Kgs" . "</span><h3>
                                                   </div>
                                              </div>
                                              <div class='row' style='padding:7px;'>
                                                   <div class='row text-center ml-4 mt-3' >
-                                                       <i class='fa fa-truck fa-2x' aria-hidden='true' style='color:goldenrod;'> </i>
-                                                       <h3 style='color:white;'>   Product Delivery : " . $del . "<h3>
+                                                       <h3 style='color:black;'>Product Delivery: " . $del . "<h3>
                                                   </div>
                                              </div>
 
                                              <div class='row' style='padding:7px; margin-bottom:15px;' >
-                                                  <div class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 aligncenter'> <a href='EditProduct.php?id=$prod_id' class='btn btn-warning border-secondary' style='color:black'><b>Edit Product</b></a></div>
-                                                  <div class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 aligncenter'> <a href='Transactions.php' class='btn btn-warning border-secondary' style='color:black'><b>My Transaction</b></a></div>
+                                                  <div class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 aligncenter'> <a href='EditProduct.php?id=$prod_id' class='btn btn-warning border-secondary' style='background-color:black;color:#f9b84d'><b>Edit Product</b></a></div>
+                                                  <div class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 aligncenter'> <a href='Transactions.php' class='btn btn-warning border-secondary' style='background-color:black;color:#f9b84d'><b>My Transaction</b></a></div>
                                              </div>
                                         </div>         
                                    </div>

@@ -10,7 +10,7 @@
      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <title>Farmer - Products</title>
+     <title>Farmer - Transaction</title>
      <!-- <link rel="stylesheet" href="portal_files/font-awesome.min.css"> -->
      <!-- <script src="../portal_files/c587fc1763.js.download" crossorigin="anonymous"></script> -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,7 +45,6 @@
           * {
                margin: 0;
                box-sizing: border-box;
-               
           }
 
 
@@ -470,7 +469,6 @@
                height: auto;
           }
 
-          /* 
           .productbox {
                float: left;
                margin: 15px;
@@ -480,9 +478,9 @@
                border: 2px solid;
                border-color: green;
                border-radius: 10px;
-          } */
+          }
 
-          /* .productbox:hover {
+          .productbox:hover {
                float: left;
                margin: 25px;
                margin-left: 30px;
@@ -495,7 +493,7 @@
                height: 325px;
                width: 240px;
 
-          } */
+          }
 
           .slideshow {
                margin-top: 10px;
@@ -507,23 +505,23 @@
 
           #navbar {
 
-               padding: 20px;
-               color: black;
-               text-decoration: none;
-               margin: 20px;
-               font-size: 25px;
-               padding-top: 10px;
-          }
+padding: 20px;
+color: black;
+text-decoration: none;
+margin: 20px;
+font-size: 25px;
+padding-top: 10px;
+}
 
-          /* #navbar:hover {
-               padding: 20px;
-               color: orangered;
-               text-decoration: underline;
-               margin: 15px;
-               font-size: 25px;
-               font-weight: bolder;
-               padding-top: 10px;
-          } */
+/* #navbar:hover {
+padding: 20px;
+color: orangered;
+text-decoration: underline;
+margin: 20px;
+font-size: 30px;
+font-weight: bolder;
+padding-top: 10px;
+} */
 
           #navbar i {
                padding-right: 1%;
@@ -801,7 +799,7 @@
 
           }
 
-          th {
+          /* th {
                border-color: white;
                border-style: solid;
                border-width: 2px;
@@ -823,57 +821,45 @@
 
           .trow {
                align-content: center;
+          } */
+
+          body {
+               margin: 0;
+               padding: 0px;
+               font-family: sans-serif;
           }
 
-          .products {
-               margin-left: 12%; 
-               
+          * {
+               box-sizing: border-box;
           }
 
-          .productbox {
-               margin-left: 15px;
-               float: left;
-               padding: 15px;
-               border-style: outline;
-               background-color:#F9B84D;
-               /* border: 4px solid;
-               border-color: black; */
-               border-radius: 10px;
-               margin-bottom:30px
-          }
+          .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-          .productbox img {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: black;
-               /* border-width: 2px; */
-               border-radius: 10px;
-          }
+    .table td,
+    .table th {
+        padding: 8px 8px;
+        border: 0.5px solid black;
+        text-align: center;
+        font-size: 16px;
+        background-color: white;
+    }
 
-          .productbox p {
-               text-align: center;
-               font-weight:650;
-               /* text-decoration: underline; */
-          }
-          
-          .productbox img:hover {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: #ffc107;
-               /* border-width: 2px; */
-               border-radius: 10px;
-          }
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid black;
+    }
 
-          .productbox p:hover {
-               text-align: center;
-               text-decoration: underline;
-          }
+    .table th {
+        background-color: black;
+        color: goldenrod;
+    }
 
-
+    .table tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
 
           /* For medium devices (e.g. tablets) */
           /* @media (min-width: 420px) {
@@ -914,10 +900,40 @@
                     background-color: #ff5500;
                }
 
-               /* 
-           .settings{
-           margin-left:79%;
-       } */
+               .table thead {
+                    display: none;
+               }
+
+               .table,
+               .table tbody,
+               .table tr,
+               .table td {
+                    display: block;
+                    width: 100%;
+               }
+
+               .table tr {
+                    margin-bottom: 15px;
+               }
+
+               .table td {
+                    text-align: right;
+                    padding-left: 50%;
+                    text-align: right;
+                    position: relative;
+               }
+
+               .table td::before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 0;
+                    width: 50%;
+                    padding-left: 15px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-align: left;
+               }
+
                .left {
                     display: flex;
                }
@@ -949,9 +965,8 @@
      </style>
 
 </head>
-
-<body style="background-color: #ffff84;">
-    <nav class="navbar navbar-expand-xl ">
+     <body style="background-color: #ffff84;">
+     <nav class="navbar navbar-expand-xl ">
         <!-- <a href="#" class="navbar-brand">Academind</a> -->
         <div class=" flex-row-reverse left ">
 
@@ -1012,22 +1027,7 @@
                         <?php getFarmerUsername(); ?>
                     </div>
             </div>
-            <div class="dropdown p-2 settings ">
-            <button class="btn  dropdown-toggle text-success" style="margin-top: -8px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Settings
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <?php
-                            if (isset($_SESSION['phonenumber'])) {
-                                echo "<a href='FarmerProfile2.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
-                                echo "<a href='Transactions.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
-                                echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
-                            } else {
-                                echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
-                            }
-                            ?>
-                    </div>
-            </div>
+            
             <div class="p-2 cart">
             <div class='loginz'>
             <a style="color:#ffff84;text-decoration:none;" href='farmerHomepage.php'>Home</a>
@@ -1041,41 +1041,87 @@
 
           <br>
 
+          <div style="display:block;">
 
-          <!-- <div class=content_item>
-               <label style="font-size :30px; text-shadow: 1px 1px 1px gray;"><b>All Products</b></label>
-               <?php
-               include("../Includes/db.php");
-               if (isset($_SESSION['phonenumber'])) {
+               <div class=content_item><label style="font-size:30px; text-shadow: 1px 1px 1px gray;"><b>TRANSACTION HISTORY</b></label></div>
+               <br>
+          </div>
 
-                    echo "<a href='InsertProduct.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               } else {
-                    echo "<a href='../auth/FarmerLogin.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               }
-               ?>
 
-          </div> -->
+          <div class="container">
 
-          <br>
-               <div class="products">
-                    <?php
-                    include("../Includes/db.php");
-                    if (isset($_SESSION['phonenumber'])) {
-                         $sess_phone_number = $_SESSION['phonenumber'];
-                         getFarmerProducts();
-                    } else {
-                         echo "<br><br><h1 align = center style='color:black;'>Please Login</h1><br><br>";
-                    }
-                    ?>
-               </div>
-               <br> <br><br>
-               
+               <table class="table">
+                    <thead>
+                         <th>Product Name</th>
+                         <th>Name</th>
+                         <th>Phone Number</th>
+                         <th>Delivery Address</th>
+                         <th>Quantity</th>
+                         <th>Amount</th>
+                    </thead>
+
+
+                    <tbody>
+                         <?php
+
+                         global $con;
+                         if (isset($_SESSION['phonenumber'])) {
+                              $sess_phone_number = $_SESSION['phonenumber'];
+                              $sel_price = "select * from orders where phonenumber = '$sess_phone_number'";
+                              $run_price = mysqli_query($con, $sel_price);
+                              $i = 0;
+
+                              while ($p_price = mysqli_fetch_array($run_price)) {
+                                   $product_id = $p_price['product_id'];
+                                   $qty = $p_price['qty'];
+                                   $total = $p_price['total'];
+                                   $address = $p_price['address'];
+                                   $phone = $p_price['buyer_phonenumber'];
+
+
+                                   $pro_price = "select * from products where product_id='$product_id'";
+                                   $run_pro_price = mysqli_query($con, $pro_price);
+                                   while ($pp_price = mysqli_fetch_array($run_pro_price)) {
+                                        $product_title = $pp_price['product_title'];
+
+
+                                        $query_name = "select * from buyerregistration where buyer_phone = $phone";
+                                        $run_query_name = mysqli_query($con, $query_name);
+                                        while ($names = mysqli_fetch_array($run_query_name)) {
+                                             $buyer_name = $names['buyer_name'];
+
+
+                         ?>
+                                             <tr>
+                                                  <td data-label="Product Name"><?php echo $product_title; ?></td>
+                                                  <td data-label="Name"><?php echo $buyer_name; ?></td>
+                                                  <td data-label="Phone Number"><?php echo $phone; ?></td>
+                                                  <td data-label="Address"><?php echo $address; ?></td>
+                                                  <td data-label="Quantity"><?php echo $qty; ?></td>
+                                                  <td data-label="Price"><?php echo $total; ?></td>
+                                             </tr>
+
+
+                    </tbody>
+<?php
+                                        }
+                                   }
+                                   $i++;
+                              }
+                         } else {
+                              echo "<h1 align = center style='color:black;'>Please Login</h1><br><br>";
+                         } ?>
+               </table>
+          </div> <br> <br>
+
+
+
+
+
+
+
+          
+
      </body>
-     <a style="position:absolute;left:50%;bottom:20px;color:#f9b84d;background-color:black;border-radius:6px;" href="InsertProduct.php"><button style="border-radius:6px;padding:4px 6px;color:#f9b84d;background-color:black;">Add New Product</button></a>      
+
 </html>
