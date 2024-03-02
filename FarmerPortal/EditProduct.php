@@ -1,30 +1,25 @@
-<!-- <?php
-     include("../Functions/functions.php");
-     ?> -->
+<?php
+include("../Includes/db.php");
+include("../Functions/functions.php");
+$sessphonenumber = $_SESSION['phonenumber'];
+?>
 
 <!DOCTYPE html>
-
-<html style="overflow-x: hidden;">
+<html lang="en">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
 
-     <title>Farmer - Products</title>
-     <!-- <link rel="stylesheet" href="portal_files/font-awesome.min.css"> -->
-     <!-- <script src="../portal_files/c587fc1763.js.download" crossorigin="anonymous"></script> -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-     <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
-     <script src="../portal_files/jquery.min.js.download"></script>
-     <script src="../portal_files/popper.min.js.download"></script>
-     <script src="../portal_files/bootstrap.min.js.download"></script>
-
-     <style>
-                     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+    <title>Farmer - Insert Product</title>
+    <style>
+                            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 :root {
      --green: #282525;
@@ -40,12 +35,11 @@
      margin: 0;
      box-sizing: border-box;
      font-family: "Poppins", sans-serif;
-     font-size: 20px;
+     font-size: 17px;
 }
           * {
                margin: 0;
                box-sizing: border-box;
-               
           }
 
 
@@ -230,19 +224,6 @@
                float: left;
           }
 
-          h3 {
-               width: 100%;
-               text-align: center;
-               border-bottom: 1px solid #000;
-               line-height: 0.1em;
-               margin: 10px 0 20px;
-          }
-
-          h3 span {
-               background: #fff;
-               padding: 0 10px;
-          }
-
           .morefooter {
                height: 100px;
                width: 100%;
@@ -264,33 +245,11 @@
 
           }
 
-          .instagram {
-               margin-top: 10px;
-               float: left;
-               margin-left: 420px;
-          }
-
-          .instaid {
-               height: 10px;
-               width: 100%;
-
-          }
 
           .text {
                float: left;
                margin-left: 735px;
                margin-top: -50px;
-          }
-
-          .gmailid {
-               float: right;
-               margin-right: 80px;
-               margin-top: -60px;
-          }
-
-          .copy {
-               float: left;
-               margin-top: -65px;
           }
 
           body {
@@ -309,13 +268,6 @@
           .add_button {
                float: right;
                text-align: center;
-          }
-
-
-          h1 {
-               font-family: 'Times New Roman', Times, serif;
-               color: white;
-
           }
 
           .lost {
@@ -341,12 +293,6 @@
                float: right;
           }
 
-          h2 {
-               color: white;
-               margin-top: 3em;
-               text-align: center;
-
-          }
 
           .hii {
                float: right;
@@ -393,12 +339,6 @@
           }
 
 
-          h1 {
-               font-family: 'Times New Roman', Times, serif;
-               color: white;
-
-          }
-
           .lost {
                font-family: Verdana, Geneva, Tahoma, sans-serif;
                color: black;
@@ -415,13 +355,6 @@
           .button {
                position: relative;
                float: right;
-          }
-
-          h2 {
-               color: white;
-               margin-top: 3em;
-               text-align: center;
-
           }
 
           .hii {
@@ -470,7 +403,6 @@
                height: auto;
           }
 
-          /* 
           .productbox {
                float: left;
                margin: 15px;
@@ -480,9 +412,9 @@
                border: 2px solid;
                border-color: green;
                border-radius: 10px;
-          } */
+          }
 
-          /* .productbox:hover {
+          .productbox:hover {
                float: left;
                margin: 25px;
                margin-left: 30px;
@@ -495,7 +427,7 @@
                height: 325px;
                width: 240px;
 
-          } */
+          }
 
           .slideshow {
                margin-top: 10px;
@@ -508,22 +440,22 @@
           #navbar {
 
                padding: 20px;
-               color: black;
+               color: green;
                text-decoration: none;
                margin: 20px;
                font-size: 25px;
                padding-top: 10px;
           }
 
-          /* #navbar:hover {
+          #navbar:hover {
                padding: 20px;
-               color: orangered;
+               color: green;
                text-decoration: underline;
                margin: 15px;
                font-size: 25px;
                font-weight: bolder;
                padding-top: 10px;
-          } */
+          }
 
           #navbar i {
                padding-right: 1%;
@@ -593,69 +525,7 @@
                margin-right: 150px;
           }
 
-          .pictus {
-               margin-top: 200px;
-               /* background-color: red; */
-          }
 
-          .pictus>img {
-               height: 100px;
-
-               width: 150px;
-          }
-
-          .imag1 {
-               margin-top: 20px;
-               margin-left: 180px;
-          }
-
-          .imag2 {
-               margin-top: 20px;
-
-               margin-left: 340px;
-
-          }
-
-          .imag3 {
-               margin-top: 20px;
-
-               margin-left: 350px;
-
-          }
-
-          .imag1_under {
-               max-width: 250px;
-               width: 100%;
-               min-height: 100px;
-               margin-left: 100px;
-               text-align: center;
-               font-size: 20px;
-
-          }
-
-          .imag2_under {
-               max-width: 250px;
-               width: 100%;
-               min-height: 100px;
-               margin-left: 290px;
-               margin-top: 20px;
-               text-align: center;
-               font-size: 20px;
-          }
-
-          .imag3_under {
-               max-width: 250px;
-               width: 100%;
-               font-size: 20px;
-
-               min-height: 100px;
-               margin-left: 290px;
-               text-align: center;
-          }
-
-          .image {
-               max-width: 200px;
-          }
 
           .aligncenter {
                text-align: center;
@@ -792,88 +662,10 @@
                margin-left: 35%;
           }
 
-          .tab {
-               width: 100%;
-
-               border-style: solid;
-               border-width: 2px;
-               padding: 2px;
+          .blackgoldie {
+               background-color: #292b2c;
 
           }
-
-          th {
-               border-color: white;
-               border-style: solid;
-               border-width: 2px;
-               padding: 2px;
-
-          }
-
-          .tableyhead {
-
-               color: red;
-
-          }
-
-          .thy {
-               background-color: #555;
-               color: white;
-
-          }
-
-          .trow {
-               align-content: center;
-          }
-
-          .products {
-               margin-left: 12%; 
-               
-          }
-
-          .productbox {
-               margin-left: 15px;
-               float: left;
-               padding: 15px;
-               border-style: outline;
-               background-color:#F9B84D;
-               /* border: 4px solid;
-               border-color: black; */
-               border-radius: 10px;
-               margin-bottom:30px
-          }
-
-          .productbox img {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: black;
-               /* border-width: 2px; */
-               border-radius: 10px;
-          }
-
-          .productbox p {
-               text-align: center;
-               font-weight:650;
-               /* text-decoration: underline; */
-          }
-          
-          .productbox img:hover {
-               height: 200px;
-               width: 250px;
-               border-style: double;
-               border: 3px solid;
-               border-color: #ffc107;
-               /* border-width: 2px; */
-               border-radius: 10px;
-          }
-
-          .productbox p:hover {
-               text-align: center;
-               text-decoration: underline;
-          }
-
-
 
           /* For medium devices (e.g. tablets) */
           /* @media (min-width: 420px) {
@@ -914,10 +706,7 @@
                     background-color: #ff5500;
                }
 
-               /* 
-           .settings{
-           margin-left:79%;
-       } */
+
                .left {
                     display: flex;
                }
@@ -930,6 +719,12 @@
                     text-align: center;
                     margin-right: 35%;
                     padding: 15px;
+               }
+
+               .desc {
+                    margin-top: 15px;
+                    height: 100px;
+
                }
 
                .searchbox {
@@ -946,12 +741,11 @@
 
 
           }
-     </style>
-
+    </style>
 </head>
 
 <body style="background-color: #ffff84;">
-    <nav class="navbar navbar-expand-xl ">
+<nav class="navbar navbar-expand-xl ">
         <!-- <a href="#" class="navbar-brand">Academind</a> -->
         <div class=" flex-row-reverse left ">
 
@@ -1012,22 +806,7 @@
                         <?php getFarmerUsername(); ?>
                     </div>
             </div>
-            <div class="dropdown p-2 settings ">
-            <button class="btn  dropdown-toggle text-success" style="margin-top: -8px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Settings
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <?php
-                            if (isset($_SESSION['phonenumber'])) {
-                                echo "<a href='FarmerProfile2.php' class='dropdown-item' style='padding-right:-20px;'>Profile</a>";
-                                echo "<a href='Transactions.php' class='dropdown-item' style='padding-right:-20px;'>Orders</a>";
-                                echo "<a href='logout.php' class='dropdown-item' style='padding-right:-20px;'>Logout</a>";
-                            } else {
-                                echo "<a href='../auth/FarmerLogin.php'> <div class='dropdown-item' style='padding-right:-20px;'>Login</div></a>";
-                            }
-                            ?>
-                    </div>
-            </div>
+            
             <div class="p-2 cart">
             <div class='loginz'>
             <a style="color:#ffff84;text-decoration:none;" href='farmerHomepage.php'>Home</a>
@@ -1035,47 +814,150 @@
             </div>
         </div>
     </nav>
-          <br>
-          
+    <div class="container">
+        <main class="my-form">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <?php
+                            if (isset($_SESSION['phonenumber'])) {
+                                if (isset($_GET['id'])) {
+                                    $id = $_GET['id'];
+                                    $getting_prod = "select * from products where product_id = $id";
+                                    $run = mysqli_query($con, $getting_prod);
+
+                                    while ($details = mysqli_fetch_array($run)) {
+                                        $product_title = $details['product_title'];
+                                        $product_cat = $details['product_cat'];
+                                        $product_type = $details['product_type'];
+                                        $product_stock = $details['product_stock'];
+                                        $product_price = $details['product_price'];
+                                        $product_expiry = $details['product_expiry'];
+                                        $product_desc = $details['product_desc'];
+                                        $product_keywords = $details['product_keywords'];
+                                        $product_delivery = $details['product_delivery'];
+                                    }
+                                }
+                            }
 
 
-          <br>
+
+                         
 
 
-          <!-- <div class=content_item>
-               <label style="font-size :30px; text-shadow: 1px 1px 1px gray;"><b>All Products</b></label>
-               <?php
-               include("../Includes/db.php");
-               if (isset($_SESSION['phonenumber'])) {
+                            ?>
 
-                    echo "<a href='InsertProduct.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               } else {
-                    echo "<a href='../auth/FarmerLogin.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
-                    </button>
-                    </a>";
-               }
-               ?>
+                            <div class="card-header" style="background-color:black;color:#f5b94a;">
+                                <h4 class="text-center font-weight-bold" >Insert Your New Product</h4>
+                            </div>
+                            <div class="card-body">
 
-          </div> -->
+                                <form name="my-form" action="InsertProduct.php" method="post" enctype="multipart/form-data">
 
-          <br>
-               <div class="products">
-                    <?php
-                    include("../Includes/db.php");
-                    if (isset($_SESSION['phonenumber'])) {
-                         $sess_phone_number = $_SESSION['phonenumber'];
-                         getFarmerProducts();
-                    } else {
-                         echo "<br><br><h1 align = center style='color:black;'>Please Login</h1><br><br>";
-                    }
-                    ?>
-               </div>
-               <br> <br><br>
-               
-     </body>
-     <a style="position:absolute;left:50%;bottom:20px;color:#f9b84d;background-color:black;border-radius:6px;" href="InsertProduct.php"><button style="border-radius:6px;padding:4px 6px;color:#f9b84d;background-color:black;">Add New Product</button></a>      
+                                    <div class="form-group row">
+                                        <label for="full_name" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Title:</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="full_name" class="form-control" name="product_title" placeholder="<?php echo $product_title; ?>" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="email_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Stock:(In kg)</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="full_name" class="form-control" name="product_stock" placeholder="<?php echo $product_title; ?>" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="user_name" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Categories:</label>
+                                        <div class="col-md-6">
+                                            <select name="product_cat" required>
+                                                <option>Select a Category</option>
+                                                <?php
+                                                $get_cats = "select * from categories";
+                                                $run_cats =  mysqli_query($con, $get_cats);
+                                                while ($row_cats = mysqli_fetch_array($run_cats)) {
+                                                    $cat_id = $row_cats['cat_id'];
+                                                    $cat_title = $row_cats['cat_title'];
+                                                    echo "<option value='$cat_id'>$cat_title</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="phone_number" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product type :</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="phone_number" class="form-control" name="product_type" placeholder="Example . potato" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="present_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Expiry :</label>
+                                        <div class="col-md-6">
+                                            <input id="present_address" class="form-control" type="date" name="product_expiry" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Image :</label>
+                                        <div class="col-md-6">
+                                            <input id="permanent_address" type="file" name="product_image">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="nid_number" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product MRP : (Per kg)</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="nid_number" class="form-control" name="product_price" placeholder="Enter Product price" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="form-group row">
+                                        <label for="nid_number1" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Base Price:(Per kg)</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="nid_number1" class="form-control" name="product_baseprice" placeholder="Enter Product base price" required>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="form-group row">
+                                        <label for="nid_number2" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder"> Product Description:</label>
+                                        <div class="col-md-6">
+                                            <textarea name="product_desc" id="nid_number2" class="form-control" name="product_desc" rows="3" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="nid_number3" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Product Keywords:</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="nid_number3" class="form-control" name="product_keywords" placeholder="Example best potatos" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="nid_number4" class="col-md-4 col-form-label text-md-right text-center font-weight-bolder">Delivery :</label>
+                                        <div class="col-md-6">
+                                            <input type="radio" id="nid_number4" name="product_delivery" value="yes" />Yes
+                                            <input type="radio" id="nid_number4" name="product_delivery" value="no" />No
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit" class="btn btn-primary" name="insert_pro" style="color:#f5b94a;background-color:black;">
+                                            INSERT
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+
+    <body>
+
 </html>
