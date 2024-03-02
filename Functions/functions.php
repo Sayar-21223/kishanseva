@@ -134,7 +134,7 @@
                     <div class='card pb-1 pl-1 pr-1 pt-0' style='height:542px; border: 2px solid #5c5c5c;'> <!-- Added border style -->
                         <br>
                         <div class='mt-0'><b>
-                            $name;
+                            $name
                         </b></h4>
                         </div>
                         <a href='../BuyerPortal2/ProductDetails.php?id=$product_id'>

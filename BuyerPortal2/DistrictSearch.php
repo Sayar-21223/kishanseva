@@ -893,7 +893,7 @@ margin-top:2%;
                                    }
                               }
                          } else {
-                              echo "<br><br><hr><h1 align = center>Product Not Available !</h1><br><br><hr>";
+                              echo "<h1 style='margin:150px auto;font-size:50px;text-wrap: nowrap;'>No Farmers Found in this District</h1>";
                          }
                     }
                }
