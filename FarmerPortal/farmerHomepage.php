@@ -878,7 +878,7 @@ svg{
                 <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
            </button>
            <a class="float-left" href="/A/index.html">
-                <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:50px;">
+                <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px; width: 200px">
            </a>
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
