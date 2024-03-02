@@ -141,6 +141,7 @@ CREATE TABLE `farmerregistration` (
 --
 
 CREATE TABLE `orders` (
+  `transaction_date` date NOT NULL DEFAULT CURRENT_DATE(),
   `order_id` int(255) NOT NULL,
   `product_id` int(255) NOT NULL,
   `qty` int(255) NOT NULL,
