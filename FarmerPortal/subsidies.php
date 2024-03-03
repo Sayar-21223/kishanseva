@@ -1068,7 +1068,7 @@ margin-left:79%;
                     </div>
                     <div class="col-6 col-xl-3 col-lg-3 col-md-6 col-sm-6 p-0 States">
 
-                         <select class="p-2 shadow-lg" id="states" name="stateInput" onchange="state()" tabindex="1" style="border-radius: 6px; border:2px solid black; margin-left:-33px">
+                         <select class="p-2 shadow-lg" id="states" name="stateInput" onchange="state()" tabindex="1" style="border-radius: 6px; border:2px solid black; margin-left:120px">
                               <option value="0">Select State</option>
                               <option value="ANDAMAN & NICOBAR ISLANDS">ANDAMAN & NICOBAR ISLANDS</option>
                               <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
@@ -1126,7 +1126,7 @@ margin-left:79%;
           echo "<br>";
           // Display subsidies for the selected state
           echo "<div class='container'>";
-          echo "<h2>Subsidies for $stateInput:</h2>";
+          echo "<h2>Subsidies for $stateInput</h2>";
           echo "<ul>";
           // Add subsidies for each state here
           switch ($stateInput) {
