@@ -833,14 +833,14 @@ include("../Functions/functions.php");
             // Step 3: Calculate the average of the total transactions for the last three months
             $row = $result->fetch_assoc();
             $total_transactions = $row['total_transactions'];
-            $average = $total_transactions / 3;
+            $average = floor($total_transactions / 3);
 
             // Step 4: Check if the average is greater than 5000
             if ($average > 5000) {
                 // Display the button
                 echo "<h2>Your Average Of Last Three Months Is ₹$average</h2>";
                 echo "<p>You Are Eligible To Apply For A Loan</p>";
-                echo '<a href="loan.php"><button>Apply Now</button></a>';
+                echo '<a href="loan.php"><button style="background-color:black;color:#f6b94f;">Apply Now</button></a>';
             } else {
                 // Do not display the button
                 echo "<h2>Your Average Of Last Three Months Is ₹$average</h2>";
