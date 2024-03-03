@@ -131,10 +131,10 @@
     
             echo "
                 <div class='col col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4'>
-                    <div class='card pb-1 pl-1 pr-1 pt-0' style='height:542px; border: 2px solid #5c5c5c;'> <!-- Added border style -->
+                    <div class='card pb-1 pl-1 pr-1 pt-0' style='border-radius:20px; padding: 5px;'> <!-- Added border style -->
                         <br>
-                        <div class='mt-0'><b>
-                            $name
+                        <div class='mt-0' style='margin-left:18px;'><b>
+                        From $name's Farm
                         </b></h4>
                         </div>
                         <a href='../BuyerPortal2/ProductDetails.php?id=$product_id'>
@@ -155,7 +155,7 @@
                             <div class='row'>
                                 <div class='col-1 col-xl-3 col-lg-2 col-md-2 col-sm-2'></div>
                                 <div class='col-12 col-xl-6 col-lg-6 col-md-6  col-sm-12'>
-                                    <a href='../BuyerPortal2/bhome.php?add_cart=$product_id' class='btn btn-warning border-secondary mr-1' style='color:black;font-weight:50px;'>Add to cart<img src='carticons.png' height='20px'></a>
+                                    <a href='../BuyerPortal2/bhome.php?add_cart=$product_id' class='btn btn-warning border-secondary mr-1' style='color:black;background-color:#f0ab2a;font-weight:50px;'>Add to cart<img src='carticons.png' height='20px'></a>
                                 </div>
                             </div>
                         </div>
@@ -183,9 +183,9 @@
         $product_cat = $rows['product_cat'];
         $product_type = $rows['product_type'];
         echo "<div class='column kolum'>
-            <div class='img-thumbnail' style='border: 3px solid black; padding: 5px;'>
+            <div class='img-thumbnail' style='border-radius:20px; padding: 5px;'>
                  <a href='../BuyerPortal2/Categories.php?type=$product_type'>
-                    <img class='rounded mx-auto d-block images' src='../Admin/product_images/$product_image' width='350px' height='200px' alt='image'>
+                    <img class='rounded mx-auto d-block images' style='border-radius:20px;' src='../Admin/product_images/$product_image' width='350px' height='200px' alt='image'>
                  </a>
             </div>
         </div>";
@@ -206,9 +206,9 @@ function getFruitsHomepage()
         $product_cat = $rows['product_cat'];
         $product_type = $rows['product_type'];
         echo "<div class='column kolum'>
-            <div class='img-thumbnail' style='border: 3px solid black; padding: 5px;'>
+            <div class='img-thumbnail' style='border-radius:20px; padding: 5px;'>
                  <a href='../BuyerPortal2/Categories.php?type=$product_type'>
-                    <img class='rounded mx-auto d-block images' src='../Admin/product_images/$product_image' width='350px' height='200px' alt='image'>
+                    <img class='mx-auto d-block images' style='border-radius:20px;' src='../Admin/product_images/$product_image' width='350px' height='200px' alt='image'>
                  </a>
             </div>
         </div>";

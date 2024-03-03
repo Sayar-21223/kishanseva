@@ -174,13 +174,16 @@ include("../Functions/functions.php");
             width: 100%;
         }
 
-        .mybtn {
+        /* .mybtn {
             border-color: #292b2c;
             border-style: solid;
             border-width: 3px;
-            border-radius: 6px;
+            border-radius: 6px; 
+        }*/
+        .mybtn:hover{
+            font-size: 20px;
+            font-weight:650;
         }
-
         .card {
             width: 100%;
             height: 100%;
@@ -581,7 +584,7 @@ include("../Functions/functions.php");
             <h1 id="headings"><span><b>Fresh Fruits </b></span>
             </h1>
         </div>
-    <div class="container" style="background-color: #F0AB2A; border:3px solid black;pading-top:">
+    <div class="container" style="background-color: #F0AB2A;border-radius:20px;pading-top:">
         
 
 
@@ -613,7 +616,7 @@ include("../Functions/functions.php");
             <h1 id="headings"><span><b>Fresh Vegetables </b></span>
             </h1>
         </div>
-    <div class="container" style="background-color: #F0AB2A; border:3px solid black;">
+    <div class="container" style="background-color: #F0AB2A;border-radius:20px;pading-top:">
 
         <hr>
 
@@ -643,7 +646,7 @@ include("../Functions/functions.php");
             <h1 id="headings"><span><b>Best Selling Products</b></span>
             </h1>
         </div>
-    <div class="container" style="background-color: #f0ab2a;margin-bottom:100px; border:3px solid black;" >
+    <div class="container" style="background-color: #F0AB2A;border-radius:20px;pading-top:" >
         <br>
         <div class="row">
             <?php

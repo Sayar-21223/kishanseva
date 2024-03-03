@@ -182,10 +182,16 @@ margin-top:2%;
                width: 100%;
           }
 
-          .mybtn {
-               border-color: green;
-               border-style: solid;
-          }
+          /* .mybtn {
+            border-color: #292b2c;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 6px; 
+        }*/
+        .mybtn:hover{
+            font-size: 20px;
+            font-weight:650;
+        }
 
           .card {
                width: 100%;
@@ -546,97 +552,97 @@ margin-top:2%;
 
 <nav class="navbar navbar-expand-xl ">
 
-        <div class=" flex-row-reverse left ">
+<div class=" flex-row-reverse left ">
 
-            <div class="p-2">
-                <div class="icon2">
-                    <a href="CartPage.php"> <i class="fa" style="font-size:30px; color:#ffff84 ;margin-top:2px;">&#61562;</i></a>
-                    <span id="icon" style="color:green"> <?php echo totalItems(); ?> </span>
-                </div>
-            </div>
-            <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;margin-top:2px;'></i></div>
-            <a class="float-left" href="bhome.php">
-                <img src="agro.png" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
-            </a>
+    <div class="p-2">
+        <div class="icon2">
+            <a href="CartPage.php"> <i class="fa" style="font-size:30px; color:#ffff84 ;margin-top:2px;">&#61562;</i></a>
+            <span id="icon" style="color:green"> <?php echo totalItems(); ?> </span>
         </div>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;margin-right:-9%;font-size:28px;"></i></span>
-        </button>
-        <a class="float-left" href="bhome.php">
-            <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:50px;">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+    <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;margin-top:2px;'></i></div>
+    <a class="float-left" href="bhome.php">
+        <img src="agro.png" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
+    </a>
+</div>
+<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;margin-right:-9%;font-size:28px;"></i></span>
+</button>
+<a class="float-left" href="bhome.php">
+    <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px;width:200px">
+</a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <div class="input-group mb-1 ml-auto mr-auto searchbox"> <!-- Add ml-auto mr-auto to center horizontally -->
-                
-                <form action="SearchResult.php" method="get" enctype="multipart/form-data">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" name="search" placeholder="Search for fruits, vegetables, or crops" style="width:500px;">
-                </form>
-                <br>
-                <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fas fa-search" style="font-size:20px;color:#f0ab2a;"></i></div>
-                </div>
-            </div>
-
-
-            <?php
-            getUsername();
-            ?>
-            <div class="list-group moblists" style="color:#ffff84">
-
-                <?php
-                if (isset($_SESSION['phonenumber'])) {
-                    echo "<a href='BuyerProfile.php' class='list-group-item list-group-item-action' style='background-color:#ffff84c;text-align:center;color:goldenrod'>Profile</a>";
-                    echo "<a href= 'Transaction.php' class='list-group-item list-group-item-action' style='background-color:#ffff84;text-align:center;color:goldenrod'>Transactions</a>";
-                    
-                    echo "<a href='farmer.php' class='list-group-item list-group-item-action' style='background-color:#ffff84;text-align:center;color:goldenrod'>Farmers</a>";
-                    echo "<a href='../Includes/logout.php' class='list-group-item list-group-item-action ' style='background-color:#ffff84;text-align:center;color:goldenrod'>Logout</a>";
-                } else {
-                    echo "<a href='../auth/BuyerLogin.php' class='list-group-item list-group-item-action ' style='background-color:#ffff84;text-align:center;color:goldenrod'>Login</a>";
-                }
-                ?>
-
-            </div>
-        </div>
-
-
-
+    <div class="input-group mb-1 ml-auto mr-auto searchbox"> <!-- Add ml-auto mr-auto to center horizontally -->
         
-        <div class=" flex-row-reverse right ">
-            <div class="p-2 cart">
-                <div class="icon2">
-                    <a href="CartPage.php"> <i class="fa" style="font-size:30px; color:#ffff84">&#61562;</i></a>
-                    <span id="icon" style="color:#ffff84"> <?php echo totalItems(); ?> </span>
-                </div>
-            </div>
-            <div class="dropdown p-2 settings ">
-            <button class="btn dropdown-toggle"  style="color:#ffff84;" type="button" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ffff84;display:inline;">
-                <p style="color:#ffff84;display:inline;">Settings</p>
-            </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <?php
-                    if (isset($_SESSION['phonenumber'])) {
-                        echo "<a href='BuyerProfile2.php' class='dropdown-item  ' style='padding-right:-20px;'>Profile</a>";
-                        echo "<a href='Transaction.php' class='dropdown-item ' style='padding-right:-20px;'>Transactions</a>";
-                        echo "<a href='../Includes/logout.php' class='dropdown-item ' style='padding-right:-20px;'>Logout</a>";
-                    } else {
-                        echo "<a href='../auth/BuyerLogin.php' class='dropdown-item ' style='padding-right:-20px;'>Login</a>";
-                    }
-                    ?>
-                </div>
-            </div>
-
-
-            <div class="text-success  login">Login</div>
+        <form action="SearchResult.php" method="get" enctype="multipart/form-data">
+            <input type="text" class="form-control" id="inlineFormInputGroup" name="search" placeholder="Search for fruits, vegetables, or crops" style="width:500px;">
+        </form>
+        <br>
+        <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-search" style="font-size:20px;color:#f0ab2a"></i></div>
         </div>
+    </div>
 
-    </nav>
+
+    <?php
+    getUsername();
+    ?>
+    <div class="list-group moblists" style="color:#ffff84">
+
+        <?php
+        if (isset($_SESSION['phonenumber'])) {
+            echo "<a href='BuyerProfile.php' class='list-group-item list-group-item-action' style='background-color:#ffff84c;text-align:center;color:goldenrod'>Profile</a>";
+            echo "<a href= 'Transaction.php' class='list-group-item list-group-item-action' style='background-color:#ffff84;text-align:center;color:goldenrod'>Transactions</a>";
+            
+            echo "<a href='farmer.php' class='list-group-item list-group-item-action' style='background-color:#ffff84;text-align:center;color:goldenrod'>Farmers</a>";
+            echo "<a href='../Includes/logout.php' class='list-group-item list-group-item-action ' style='background-color:#ffff84;text-align:center;color:goldenrod'>Logout</a>";
+        } else {
+            echo "<a href='../auth/BuyerLogin.php' class='list-group-item list-group-item-action ' style='background-color:#ffff84;text-align:center;color:goldenrod'>Login</a>";
+        }
+        ?>
+
+    </div>
+</div>
+
+
+
+
+<div class=" flex-row-reverse right ">
+    <div class="p-2 cart">
+        <div class="icon2">
+            <a href="CartPage.php"> <i class="fa" style="font-size:30px; color:#ffff84">&#61562;</i></a>
+            <span id="icon" style="color:#ffff84"> <?php echo totalItems(); ?> </span>
+        </div>
+    </div>
+    <div class="dropdown p-2 settings ">
+    <button class="btn dropdown-toggle" style="color:#ffff84;" type="button" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ffff84;display:inline;">
+        <p style="color:#ffff84;display:inline;">Settings</p>
+    </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <?php
+            if (isset($_SESSION['phonenumber'])) {
+                echo "<a href='BuyerProfile2.php' class='dropdown-item  ' style='padding-right:-20px;'>Profile</a>";
+                echo "<a href='Transaction.php' class='dropdown-item ' style='padding-right:-20px;'>Transactions</a>";
+                echo "<a href='../Includes/logout.php' class='dropdown-item ' style='padding-right:-20px;'>Logout</a>";
+            } else {
+                echo "<a href='../auth/BuyerLogin.php' class='dropdown-item ' style='padding-right:-20px;'>Login</a>";
+            }
+            ?>
+        </div>
+    </div>
+
+
+    <div class="text-success  login">Login</div>
+</div>
+
+</nav>   
      <div class="container" style="background-color:#ffff84">
           <div class="d-flex justify-content-around mb-3" style="background-color:#ffff84">
 
           <div class="p-2 ">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Fruits
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -648,7 +654,7 @@ margin-top:2%;
                </div>
                <div class="p-2">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Vegetables
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -660,7 +666,7 @@ margin-top:2%;
                </div>
                <div class="p-2 ">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Crops
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

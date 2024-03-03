@@ -190,10 +190,16 @@ include("../Functions/functions.php");
                width: 100%;
           }
 
-          .mybtn {
-               border-color: green;
-               border-style: solid;
-          }
+          /* .mybtn {
+            border-color: #292b2c;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 6px; 
+        }*/
+        .mybtn:hover{
+            font-size: 20px;
+            font-weight:650;
+        }
 
           .card {
                width: 100%;
@@ -612,7 +618,7 @@ include("../Functions/functions.php");
 
                <div class="p-2 ">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Fruits
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -624,7 +630,7 @@ include("../Functions/functions.php");
                </div>
                <div class="p-2">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Vegetables
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -636,7 +642,7 @@ include("../Functions/functions.php");
                </div>
                <div class="p-2 ">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Crops
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -789,7 +795,7 @@ include("../Functions/functions.php");
                               }
                               echo "
                     <div class='col col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4'>
-                <div class='card pb-1 pl-1 pr-1 pt-0' style='height:500px;border:3px solid black;'>
+                <div class='card pb-1 pl-1 pr-1 pt-0' style='height:560px;border-radius:20px;'>
                     <br>
                     <div class='mt-0'><b>
                             <h4 style='margin-left:18px;margin-bottom:  10px;'> From $name's Farm

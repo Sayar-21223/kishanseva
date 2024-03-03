@@ -70,10 +70,16 @@ include("../Functions/functions.php");
         width: 100%;
     }
 
-    .mybtn {
-        border-color: green;
-        border-style: solid;
-    }
+    /* .mybtn {
+            border-color: #292b2c;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 6px; 
+        }*/
+        .mybtn:hover{
+            font-size: 20px;
+            font-weight:650;
+        }
 
     .card {
         width: 100%;
@@ -445,7 +451,7 @@ include("../Functions/functions.php");
 
 
                 echo "
-                <div class='container'>
+                <div class='container' >
                     <div class='text-center' >
                         <br>
                         <h1 id='headings' class='font-weight-bold'>$product_title</h1>
@@ -453,8 +459,8 @@ include("../Functions/functions.php");
                     <br>
 
 
-                    <div class='row'style='background-color:white;border:3px solid black'>
-                        <div class='col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12   imageblock' style='border:3px solid black;'> <img src='../Admin/product_images/$product_image' class='d-flex mx-auto btn-dark image' height='290px;' width='370px;'><br>
+                    <div class='row'style='background-color:white;border-radius:20px'>
+                        <div class='col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12   imageblock' style='border-radius:20px'> <img style='border-radius:20px' src='../Admin/product_images/$product_image' class='d-flex mx-auto btn-dark image' height='290px;' width='370px;'><br>
                             <b>
                                 <div class='text-center'>
                                     <h2>$product_type</h2>
@@ -462,7 +468,7 @@ include("../Functions/functions.php");
                                 </div>
                             </b></div>
 
-                        <div class='col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 block' style='border:3px solid black;background-color:#f0ab2a'>
+                        <div class='col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 block' style='background-color:#f0ab2a'>
                             <div class='text-center mt-2 ''>
                             
                                 <br>
@@ -478,15 +484,15 @@ include("../Functions/functions.php");
                                 <form actions='' method='post'>
                                     <div class='text-center'>
                                         <div class='input-group mb-3 wholequantity' >
-                                            <div class='input-group-prepend quantity' style='border:2px solid black;border-radius:4px;'>
-                                                <span class='input-group-text border-secondary quantitylabel' style='background-color:black;color:#ffff84' id='inputGroup-sizing-default' ><b>Quantity</b></span>
+                                            <div class='input-group-prepend quantity' style='border:1px solid black;border-radius:4px;'>
+                                                <span class='input-group-text border-secondary quantitylabel' style='background-color:black;color:#f0ab2a' id='inputGroup-sizing-default' ><b>Quantity</b></span>
                                             </div>
                                             <input style='border:2px solid black;height:45px' type='number' name='qty' placeholder=1 class='form-control quantitynumber' aria-label='Default' aria-describedby='inputGroup-sizing-default'>
                                         </div>
                                     </div>
                                     <div class='row'>
                                         <div class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12'  style='margin:auto;'> 
-                                            <button name='cart' type='submit' class='btn border-secondary addtocart' style='background-color:black;color:#ffff84'><b>Add to cart</b></button>
+                                            <button name='cart' type='submit' class='btn border-secondary addtocart' style='background-color:black;color:#f0ab2a'><b>Add to cart</b></button>
                                         </div>
                                     </div>
                                 </form>
@@ -497,7 +503,7 @@ include("../Functions/functions.php");
 
                             </div>
                         </div>
-                        <div class='col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 text-white'  style='border:3px solid black;background-color:white'>
+                        <div class='col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 text-white'  style='border-radius:20px;background-color:white'>
                             <div class='text-center farmerdetails mt-4 ' style='color:goldenrod'><b>
                                     <b>
                                         <h2 style='color:black;margin-top:70px'>Farmer Details

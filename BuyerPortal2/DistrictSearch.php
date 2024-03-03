@@ -205,10 +205,16 @@ margin-top:2%;
                width: 100%;
           }
 
-          .mybtn {
-               border-color: green;
-               border-style: solid;
-          }
+          /* .mybtn {
+            border-color: #292b2c;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 6px; 
+        }*/
+        .mybtn:hover{
+            font-size: 20px;
+            font-weight:650;
+        }
 
           .card {
                width: 100%;
@@ -660,7 +666,7 @@ margin-top:2%;
 
           <div class="p-2 ">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Fruits
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -672,7 +678,7 @@ margin-top:2%;
                </div>
                <div class="p-2">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Vegetables
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -684,7 +690,7 @@ margin-top:2%;
                </div>
                <div class="p-2 ">
                     <div class="dropdown">
-                         <button class="btn mybtn dropdown-toggle" style="border:3px solid black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <button class="btn mybtn dropdown-toggle"type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Crops
                          </button>
                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

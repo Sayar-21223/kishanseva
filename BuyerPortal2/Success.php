@@ -64,10 +64,16 @@
        }
 
 
-       .mybtn {
-            border-color: green;
+       /* .mybtn {
+            border-color: #292b2c;
             border-style: solid;
-       }
+            border-width: 3px;
+            border-radius: 6px; 
+        }*/
+        .mybtn:hover{
+            font-size: 20px;
+            font-weight:650;
+        }
 
 
        .right {

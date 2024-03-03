@@ -182,10 +182,16 @@ margin-top:2%;
                width: 100%;
           }
 
-          .mybtn {
-               border-color: green;
-               border-style: solid;
-          }
+          /* .mybtn {
+            border-color: #292b2c;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 6px; 
+        }*/
+        .mybtn:hover{
+            font-size: 20px;
+            font-weight:650;
+        }
 
           .card {
                width: 100%;
