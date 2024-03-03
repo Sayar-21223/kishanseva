@@ -978,7 +978,7 @@ padding-top: 10px;
             </div>
             <!-- <div class="p-2 ml-5"><i class='far fa-user-circle' style='font-size:30px; color: green;'></i></div> -->
             <a class="float-left" href="#">
-                    <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:50px;">
+                    <img src="../images/website/logo.svg" class="float-left mr-5 ml-0 " alt="Logo" style="height:110px; width:200px;">
             </a>
         </div>
         <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
