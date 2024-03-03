@@ -878,7 +878,7 @@ svg{
         <button class="navbar-toggler" data-toggle="collapse" style="margin-left:-20px;" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars p-1 " style="color:green;font-size:20px; "></i></span>
         </button>
-        <a class="float-left" href="/A/index.html">
+        <a class="float-left" href="/kishanseva/index.html">
             <img src="logo_farm.png" class="float-left mr-2 moblogo" alt="Logo" style="height:110px; width: 200px">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
