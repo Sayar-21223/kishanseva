@@ -801,56 +801,64 @@ include("../Functions/functions.php");
     </nav>
     <div class="container">
         <?php
-        // Step 1: Connect to your database (Assuming you have already established a database connection)
+        // Step 1: Start the session to access session variables
+// session_start();
 
-        // Your database credentials
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "impulse101"; // Your database name
+// Step 2: Check if the user is logged in and get their phone number from the session
+if(isset($_SESSION['phonenumber'])) {
+    // Get the logged-in farmer's phone number
+    $logged_in_phonenumber = $_SESSION['phonenumber'];
 
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
+    // Step 3: Connect to your database
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "impulse101"; // Your database name
 
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-        // Step 2: Retrieve the total transactions for the last three months
-        // Assuming you have a table named 'orders' with a 'total' column and a 'application_date' column
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-        // Calculate the date three months ago
-        $threeMonthsAgo = date('Y-m-d', strtotime('-3 months'));
+    // Step 4: Calculate the date three months ago
+    $threeMonthsAgo = date('Y-m-d', strtotime('-3 months'));
 
-        // Query to retrieve total transactions for the last three months
-        $sql = "SELECT SUM(total) AS total_transactions FROM orders WHERE transaction_date >= '$threeMonthsAgo'";
+    // Step 5: Query to retrieve total transactions for the last three months for the logged-in farmer
+    $sql = "SELECT SUM(total) AS total_transactions FROM orders WHERE transaction_date >= '$threeMonthsAgo' AND phonenumber = '$logged_in_phonenumber'";
 
-        $result = $conn->query($sql);
+    $result = $conn->query($sql);
 
-        if ($result->num_rows > 0) {
-            // Step 3: Calculate the average of the total transactions for the last three months
-            $row = $result->fetch_assoc();
-            $total_transactions = $row['total_transactions'];
-            $average = floor($total_transactions / 3);
+    if ($result->num_rows > 0) {
+        // Step 6: Calculate the average of the total transactions for the last three months
+        $row = $result->fetch_assoc();
+        $total_transactions = $row['total_transactions'];
+        $average = floor($total_transactions / 3);
 
-            // Step 4: Check if the average is greater than 5000
-            if ($average > 5000) {
-                // Display the button
-                echo "<h2>Your Average Of Last Three Months Is ₹$average</h2>";
-                echo "<p>You Are Eligible To Apply For A Loan</p>";
-                echo '<a href="loan.php"><button style="background-color:black;color:#f6b94f;">Apply Now</button></a>';
-            } else {
-                // Do not display the button
-                echo "<h2>Your Average Of Last Three Months Is ₹$average</h2>";
-                echo "<p>You Are Not Eligible To Apply For A Loan</p>";
-            }
+        // Step 7: Check if the average is greater than 5000
+        if ($average > 5000) {
+            // Display the button
+            echo "<h2>Your Average Of Last Three Months Is ₹$average</h2>";
+            echo "<p>You Are Eligible To Apply For A Loan</p>";
+            echo '<a href="loan.php"><button style="background-color:black;color:#f6b94f;">Apply Now</button></a>';
         } else {
-            echo "<h2>No data found</h2>";
+            // Do not display the button
+            echo "<h2>Your Average Of Last Three Months Is ₹$average</h2>";
+            echo "<p>You Are Not Eligible To Apply For A Loan</p>";
         }
+    } else {
+        echo "<h2>No data found</h2>";
+    }
 
-        // Close the database connection
-        $conn->close();
+    // Step 8: Close the database connection
+    $conn->close();
+} else {
+    // If the user is not logged in, redirect them to the login page or display a message
+    echo "Please log in to view this page.";
+}
+
         ?>
     </div>
 <div class="but" style="margin-left: 700px;">
