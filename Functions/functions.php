@@ -130,8 +130,8 @@
             }
     
             echo "
-                <div class='col col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4'>
-                    <div class='card pb-1 pl-1 pr-1 pt-0' style='border-radius:20px; padding: 5px;'> <!-- Added border style -->
+                <div class='col col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4' style='margin-bottom:20px; margin-left:-5px;'>
+                    <div class='card pb-1 pl-1 pr-1 pt-0' style='border-radius:20px; padding: 5px; '> <!-- Added border style -->
                         <br>
                         <div class='mt-0' style='margin-left:18px;'><b>
                         From $name's Farm

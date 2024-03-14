@@ -367,6 +367,7 @@ include("../Functions/functions.php");
             /* IE10 */
             flex-wrap: wrap;
             padding: 0 4px;
+            
         }
 
         /* Create four equal columns that sits next to each other */

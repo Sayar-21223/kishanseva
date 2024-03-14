@@ -1049,7 +1049,7 @@
                if (isset($_SESSION['phonenumber'])) {
 
                     echo "<a href='InsertProduct.php'>
-                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
+                    <button class='btn btn-warning btn-lg p-3 m-3 font-weight-bold; margin-left:10px'>Add New Product <i class='fas fa-plus-square p-2 fa-1x'></i>
                     </button>
                     </a>";
                } else {
